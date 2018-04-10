@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Василий Шубин](https://up.htmlacademy.ru/adaptive/14/user/334301).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Мигаева](https://htmlacademy.ru/profile/hatewait).
 
 ---
 
