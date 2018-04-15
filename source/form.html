@@ -6,38 +6,40 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header__logo">
-        <img class="main-header__logo-img" src="http://placehold.it/150x100" alt="Логотип сайта" width="86" height="35">
-      </a>
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="./index.html">
+          <img class="main-header__logo-img" src="http://placehold.it/150x100" alt="Логотип сайта" width="86" height="35">
+        </a>
 
-      <nav class="main-header__nav main-nav">
-        <button class="main-nav__toggle-button" type="button">
-          <span class="visually-hidden">Переключатель меню</span>
-        </button>
+        <nav class="main-header__nav main-nav">
+          <button class="main-nav__toggle-button" type="button">
+            <span class="visually-hidden">Переключатель меню</span>
+          </button>
 
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="./catalog.html">
-              Каталог
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="./form.html">
-              Вязание на заказ
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--search">
-            <a href="#">
-              Поиск по сайту
-            </a>
-          </li>
-          <li class="site-list__item site-list__item--basket">
-            <a href="#">
-              Корзина: пока пуста
-            </a>
-          </li>
-        </ul>
-      </nav>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="./catalog.html">
+                Каталог
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="./form.html">
+                Вязание на заказ
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--search">
+              <a href="#">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--basket">
+              <a href="#">
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page-form">
@@ -52,12 +54,16 @@
         <form class="new-order__form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="new-order__setting setting setting--type">
             <legend class="setting__title">Тип</legend>
-            <input class="visually-hidden" type="radio" name="type" id="type-1" value="Аксессуар для интерьера" checked>
-            <input class="visually-hidden" type="radio" name="type" id="type-2" value="Детская игрушка">
 
             <div class="setting__wrapper">
-              <label class="setting__value setting__value--checked" for="type-1">Аксессуар для интерьера</label>
-              <label class="setting__value" for="type-2">Детская игрушка</label>
+              <label class="setting__value setting__value--checked" for="type-1">
+                <input class="visually-hidden" type="radio" name="type" id="type-1" value="Аксессуар для интерьера" checked>
+                Аксессуар для интерьера
+              </label>
+              <label class="setting__value" for="type-2">
+                <input class="visually-hidden" type="radio" name="type" id="type-2" value="Детская игрушка">
+                Детская игрушка
+              </label>
             </div>
           </fieldset>
 
@@ -83,17 +89,17 @@
           <fieldset class="new-order__setting setting setting--user">
             <legend class="setting__title">ФИО</legend>
             <label class="setting__label">
-              <span>Имя:</span>
+              Имя:
               <input class="setting__text-input" type="text" name="First name" placeholder="Введите ваше имя*" required>
             </label>
 
             <label class="setting__label">
-              <span>Фамилия:</span>
+              Фамилия:
               <input class="setting__text-input" type="text" name="Last name" placeholder="Укажите фамилию*" required>
             </label>
 
             <label class="setting__label">
-              <span>Отчество:</span>
+              Отчество:
               <input class="setting__text-input" type="text" name="Middle name" placeholder="Отчество, если желаете">
             </label>
           </fieldset>
@@ -127,31 +133,33 @@
     </main>
 
     <footer class="main-footer">
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item social__item--inst">
-            <a href="#">
-              <span class="visually-hidden">instagramm</span>
-            </a>
-          </li>
-          <li class="social__item social__item--fb">
-            <a href="#">
-              <span class="visually-hidden">facebook</span>
-            </a>
-          </li>
-          <li class="social__item social__item--tw">
-            <a href="#">
-              <span class="visually-hidden">twitter</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+      <div class="main-footer__wrapper">
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item social__item--inst">
+              <a href="#">
+                <span class="visually-hidden">instagramm</span>
+              </a>
+            </li>
+            <li class="social__item social__item--fb">
+              <a href="#">
+                <span class="visually-hidden">facebook</span>
+              </a>
+            </li>
+            <li class="social__item social__item--tw">
+              <a href="#">
+                <span class="visually-hidden">twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="main-footer__developer developer">
-        <span class="developer__intro">Разработано</span>
-        <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">Логотип академии</span>
-        </a>
+        <div class="main-footer__developer developer">
+          <span class="developer__intro">Разработано</span>
+          <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Логотип академии</span>
+          </a>
+        </div>
       </div>
     </footer>
   </body>
