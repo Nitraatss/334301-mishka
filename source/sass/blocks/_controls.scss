@@ -15,14 +15,14 @@
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid #ececec;
-}
 
-.controls__button--next {
-  background-image: url("../img/icon-right-arrow.svg");
-  border-left: none;
-}
+  &--next {
+    background-image: url("../img/icon-right-arrow.svg");
+    border-left: none;
+  }
 
-.controls__button--previous {
-  background-image: url("../img/icon-left-arrow.svg");
-  border-right: none;
+  &--previous {
+    background-image: url("../img/icon-left-arrow.svg");
+    border-right: none;
+  }
 }

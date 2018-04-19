@@ -17,10 +17,10 @@
 
 .popular-categories__item {
   background-color: #63d1bb;
-}
 
-.popular-categories__item:last-of-type {
-  background-color: #56c3b2;
+  &:last-of-type {
+    background-color: #56c3b2;
+  }
 }
 
 .popular-categories__link {
@@ -40,31 +40,31 @@
 
   vertical-align: middle;
   text-align: left;
-}
 
-.popular-categories__title::after {
-  content: "";
-  position: absolute;
-  top: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
 
-  background-repeat: no-repeat;
-  background-position: center;
-}
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-.popular-categories__title--interior::after {
-  right: 0;
+  &--interior::after {
+    right: 0;
 
-  width: 40px;
-  height: 62px;
+    width: 40px;
+    height: 62px;
 
-  background-image: url("../img/icon-toy.svg");
-}
+    background-image: url("../img/icon-toy.svg");
+  }
 
-.popular-categories__title--toys::after {
-  right: 0;
+  &--toys::after {
+    right: 0;
 
-  width: 60px;
-  height: 60px;
+    width: 60px;
+    height: 60px;
 
-  background-image: url("../img/icon-interior.svg");
+    background-image: url("../img/icon-interior.svg");
+  }
 }

@@ -1,0 +1,62 @@
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__item a {
+  position: relative;
+
+  display: block;
+
+  &--inst a {
+    width: 22px;
+    height: 21px;
+  }
+
+  &--fb a {
+    width: 15px;
+    height: 28px;
+  }
+
+  &--tw a {
+    width: 23px;
+    height: 20px;
+  }
+
+  & a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--inst a::before {
+    width: 22px;
+    height: 21px;
+
+    background-image: url("../img/icon-insta.svg");
+  }
+
+  &--fb a::before {
+    width: 15px;
+    height: 28px;
+
+    background-image: url("../img/icon-fb.svg");
+  }
+
+  &--tw a::before {
+    width: 23px;
+    height: 20px;
+
+    background-image: url("../img/icon-twitter.svg");
+  }
+}

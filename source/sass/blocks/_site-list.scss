@@ -10,8 +10,8 @@
 .site-list__item {
   background-color: white;
   border-bottom: 1px solid #ececec;
-}
 
-.site-list__item:last-of-type {
-  border-bottom: none;
+  &:last-of-type {
+    border-bottom: none;
+  }
 }

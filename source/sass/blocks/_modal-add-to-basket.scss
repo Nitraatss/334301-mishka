@@ -54,10 +54,10 @@
 
   background: #ffffff;
   border: 2px solid #444444;
-}
 
-.modal-add-to-basket__option--checked {
-  border: 2px solid $site-color;
+  &--checked {
+    border: 2px solid $site-color;
+  }
 }
 
 .modal-add-to-basket__submit-button {

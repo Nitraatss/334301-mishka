@@ -14,8 +14,8 @@
   margin: 0;
 
   font-style: italic;
-}
 
-.info__text--email {
-  border-bottom: 1px solid $site-color;
+  &--email {
+    border-bottom: 1px solid $site-color;
+  }
 }

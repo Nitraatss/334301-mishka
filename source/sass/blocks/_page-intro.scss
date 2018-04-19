@@ -5,15 +5,15 @@
   align-items: center;
   min-height: 285px;
   padding: 22px;
-}
 
-.page-intro--img {
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+  &--img {
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
-.page-intro--no-img {
-  background-color: #f1f1f1;
+  &--no-img {
+    background-color: #f1f1f1;
+  }
 }

@@ -1,80 +1,28 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import "global.scss";
 @import "variables.scss";
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 30px;
-  font-family: $main-font;
-  color: black;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-
-  white-space: nowrap;
-
-  border: 0;
-
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-}
-
-@import "blocks/main-header/main-header.scss";
-@import "blocks/main-header/main-nav.scss";
-@import "blocks/main-header/site-list.scss";
-@import "blocks/main-footer/main-footer.scss";
-@import "blocks/main-footer/social.scss";
-@import "blocks/main-footer/developer.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/developer.scss";
 @import "blocks/page-intro.scss";
 @import "blocks/page-title.scss";
 @import "blocks/button.scss";
-@import "blocks/page-main/popular-categories.scss";
-@import "blocks/page-main/section-intro.scss";
-@import "blocks/page-main/week-offer.scss";
-@import "blocks/page-main/param.scss";
-@import "blocks/page-main/about-us.scss";
-@import "blocks/page-main/reviews.scss";
-@import "blocks/page-main/review.scss";
-@import "blocks/page-main/author.scss";
-@import "blocks/page-main/controls.scss";
-@import "blocks/page-main/contacts.scss";
-@import "blocks/page-main/info.scss";
-@import "blocks/page-main/map.scss";
-@import "blocks/page-catalog/catalog.scss";
-@import "blocks/page-catalog/product.scss";
-@import "blocks/page-catalog/production.scss";
-@import "blocks/page-form/new-order.scss";
-@import "blocks/page-form/setting.scss";
+@import "blocks/popular-categories.scss";
+@import "blocks/section-intro.scss";
+@import "blocks/week-offer.scss";
+@import "blocks/param.scss";
+@import "blocks/about-us.scss";
+@import "blocks/reviews.scss";
+@import "blocks/review.scss";
+@import "blocks/author.scss";
+@import "blocks/controls.scss";
+@import "blocks/contacts.scss";
+@import "blocks/info.scss";
+@import "blocks/catalog.scss";
+@import "blocks/product.scss";
+@import "blocks/production.scss";
+@import "blocks/new-order.scss";
+@import "blocks/setting.scss";
 @import "blocks/modal-add-to-basket.scss";
