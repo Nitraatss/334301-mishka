@@ -13,50 +13,50 @@
   position: relative;
 
   display: block;
+}
 
-  &--inst a {
-    width: 22px;
-    height: 21px;
-  }
+.social__item--inst a {
+  width: 22px;
+  height: 21px;
+}
 
-  &--fb a {
-    width: 15px;
-    height: 28px;
-  }
+.social__item--fb a {
+  width: 15px;
+  height: 28px;
+}
 
-  &--tw a {
-    width: 23px;
-    height: 20px;
-  }
+.social__item--tw a {
+  width: 23px;
+  height: 20px;
+}
 
-  & a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+.social__item a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-  &--inst a::before {
-    width: 22px;
-    height: 21px;
+.social__item--inst a::before {
+  width: 22px;
+  height: 21px;
 
-    background-image: url("../img/icon-insta.svg");
-  }
+  background-image: url("../img/icon-insta.svg");
+}
 
-  &--fb a::before {
-    width: 15px;
-    height: 28px;
+.social__item--fb a::before {
+  width: 15px;
+  height: 28px;
 
-    background-image: url("../img/icon-fb.svg");
-  }
+  background-image: url("../img/icon-fb.svg");
+}
 
-  &--tw a::before {
-    width: 23px;
-    height: 20px;
+.social__item--tw a::before {
+  width: 23px;
+  height: 20px;
 
-    background-image: url("../img/icon-twitter.svg");
-  }
+  background-image: url("../img/icon-twitter.svg");
 }
