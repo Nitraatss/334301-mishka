@@ -1,0 +1,72 @@
+.modal-add-to-basket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 33px;
+  padding-right: 30px;
+  padding-bottom: 46px;
+  padding-left: 30px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+  font-family: $main-font;
+
+  background-color: white;
+}
+
+.modal-add-to-basket__wrapper {
+  margin: 0 auto;
+}
+
+.modal-add-to-basket__form {
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px 0 rgba(0,1,1,0.25);
+}
+
+.modal-add-to-basket__title {
+  margin: 0;
+
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.modal-add-to-basket__intro {
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  color: #444444;
+  letter-spacing: 0;
+}
+
+.modal-add-to-basket__option {
+  display: inline-block;
+  min-width: 82px;
+  min-height: 52px;
+  padding: 17px;
+
+  vertical-align: middle;
+  text-align: center;
+  color: #444444;
+  letter-spacing: 0;
+
+  background: #ffffff;
+  border: 2px solid #444444;
+}
+
+.modal-add-to-basket__option--checked {
+  border: 2px solid $site-color;
+}
+
+.modal-add-to-basket__submit-button {
+  padding: 17px;
+
+  text-align: center;
+  color: white;
+  letter-spacing: 0;
+
+  background-color: $site-color;
+  border: none;
+}

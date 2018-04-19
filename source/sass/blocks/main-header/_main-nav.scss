@@ -1,0 +1,30 @@
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.main-nav__toggle-button {
+  position: relative;
+
+  width: 20px;
+  height: 21px;
+  padding: 0;
+
+  border: none;
+}
+
+.main-nav__toggle-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 21px;
+
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
