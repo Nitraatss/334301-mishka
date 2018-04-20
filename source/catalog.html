@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="./index.html">
-          <img class="main-header__logo-img" src="http://placehold.it/150x100" alt="Логотип сайта" width="86" height="35">
+          <img class="main-header__logo-img" src="./img/logo-mobile.svg" alt="Логотип сайта" width="86" height="35">
         </a>
 
         <nav class="main-header__nav main-nav">
@@ -43,9 +44,11 @@
     </header>
 
     <main class="page-catalog">
-      <h1 class="page-catalog__title page-title">
-        Каталог товаров
-      </h1>
+      <section class="page-intro page-intro--no-img">
+        <h1 class="page-catalog__title page-title">
+          Каталог товаров
+        </h1>
+      </section>
 
       <section class="catalog">
         <div class="catalog__wrapper">
@@ -53,7 +56,7 @@
 
           <article class="catalog__product product">
             <a class="product__image" href="#">
-              <img src="http://placehold.it/150x100" alt="Изображение товара" width="260" height="195">
+              <img src="./img/photo-hare-mobile@1x.jpg" alt="Изображение товара" width="260" height="195">
             </a>
             <div class="product__description">
               <h3 class="product__title">
@@ -72,7 +75,7 @@
 
           <article class="catalog__product product">
             <a class="product__image" href="#">
-              <img src="http://placehold.it/150x100" alt="Изображение товара" width="260" height="195">
+              <img src="./img/photo-bowl-mobile@1x.jpg" alt="Изображение товара" width="260" height="195">
             </a>
             <div class="product__description">
               <h3 class="product__title">
@@ -91,7 +94,7 @@
 
           <article class="catalog__product product">
             <a class="product__image" href="#">
-              <img src="http://placehold.it/150x100" alt="Изображение товара" width="260" height="195">
+              <img src="./img/photo-toys-mobile@1x.jpg" alt="Изображение товара" width="260" height="195">
             </a>
             <div class="product__description">
               <h3 class="product__title">
@@ -116,17 +119,15 @@
             Процесс производства
           </h2>
 
-          <img class="production__video" src="http://placehold.it/150x100" alt="Изображение товара" width="260" height="150">
+          <img class="production__video" src="./img/video-mobile@1x.jpg" alt="Изображение товара" width="260" height="150">
 
           <button class="production__play-video" type="button">
             <span class="visually-hidden">Воспроизвести видео</span>
           </button>
 
-          <div class="production__wrapper">
-            <a class="production__button button" href="#">
-              Сделать заказ
-            </a>
-          </div>
+          <a class="production__button button" href="#">
+            Сделать заказ
+          </a>
         </div>
       </section>
     </main>

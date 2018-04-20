@@ -1,0 +1,38 @@
+.week-offer {
+  margin: 0 auto;
+  margin-bottom: 36px;
+  padding: 0 30px;
+}
+
+.week-offer__subintro {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: left;
+  color: $site-color;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.week-offer__description {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: $main-font-size;
+  line-height: 24px;
+  color: $grey-color;
+  letter-spacing: 0;
+}
+
+.week-offer__params {
+  border-collapse: collapse;
+}
+
+.week-offer__price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: $grey-color;
+  letter-spacing: 0;
+}

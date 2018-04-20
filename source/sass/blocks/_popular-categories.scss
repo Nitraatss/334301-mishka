@@ -1,0 +1,70 @@
+.popular-categories {
+  margin-bottom: 33px;
+
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: white;
+  letter-spacing: 0;
+}
+
+.popular-categories__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.popular-categories__item {
+  background-color: #63d1bb;
+
+  &:last-of-type {
+    background-color: #56c3b2;
+  }
+}
+
+.popular-categories__link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 105px;
+  padding: 30px 28px;
+}
+
+.popular-categories__title {
+  position: relative;
+
+  width: 100%;
+  margin: 0;
+
+  vertical-align: middle;
+  text-align: left;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--interior::after {
+    right: 0;
+
+    width: 40px;
+    height: 62px;
+
+    background-image: url("../img/icon-toy.svg");
+  }
+
+  &--toys::after {
+    right: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../img/icon-interior.svg");
+  }
+}

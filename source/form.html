@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__logo" href="./index.html">
-          <img class="main-header__logo-img" src="http://placehold.it/150x100" alt="Логотип сайта" width="86" height="35">
+          <img class="main-header__logo-img" src="./img/logo-mobile.svg" alt="Логотип сайта" width="86" height="35">
         </a>
 
         <nav class="main-header__nav main-nav">
@@ -43,24 +44,28 @@
     </header>
 
     <main class="page-form">
-      <h1 class="page-form__title page-title">
-        Вязание на заказ
-      </h1>
+      <section class="page-intro page-intro--no-img">
+        <h1 class="page-form__title page-title">
+          Вязание на заказ
+        </h1>
+      </section>
 
       <section class="new-order">
         <h2 class="visually-hidden">Новый заказ</h2>
-        <p class="new-order__intro"></p>
+        <p class="new-order__intro">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
 
         <form class="new-order__form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="new-order__setting setting setting--type">
             <legend class="setting__title">Тип</legend>
 
             <div class="setting__wrapper">
-              <label class="setting__value setting__value--checked" for="type-1">
+              <label class="setting__value setting__value--radio setting__value--radio-checked" for="type-1">
                 <input class="visually-hidden" type="radio" name="type" id="type-1" value="Аксессуар для интерьера" checked>
                 Аксессуар для интерьера
               </label>
-              <label class="setting__value" for="type-2">
+              <label class="setting__value setting__value--radio" for="type-2">
                 <input class="visually-hidden" type="radio" name="type" id="type-2" value="Детская игрушка">
                 Детская игрушка
               </label>
@@ -70,27 +75,27 @@
           <fieldset class="new-order__setting setting setting--colors">
             <legend class="setting__title">Цвет</legend>
             <div class="setting__wrapper">
-              <label class="setting__value setting__value--checked" for="color-1">
+              <label class="setting__value setting__value--checkebox setting__value--checkebox-checked" for="color-1">
                 Белый
                 <input class="visually-hidden" type="checkbox" name="color-white" id="color-1" value="Белый" checked>
               </label>
-              <label class="setting__value setting__value--checked" for="color-2">
+              <label class="setting__value setting__value--checkebox setting__value--checkebox-checked" for="color-2">
                 Серый
                 <input class="visually-hidden" type="checkbox" name="color-grey" id="color-2" value="Серый" checked>
               </label>
-              <label class="setting__value" for="color-3">
+              <label class="setting__value setting__value--checkebox setting__value--checkebox-checked" for="color-3">
                 «Тиффани»
                 <input class="visually-hidden" type="checkbox" name="color-tiffani" id="color-3" value="«Тиффани»">
               </label>
-              <label class="setting__value" for="color-4">
+              <label class="setting__value setting__value--checkebox" for="color-4">
                 Черный
                 <input class="visually-hidden" type="checkbox" name="color-black" id="color-4" value="Черный">
               </label>
-              <label class="setting__value" for="color-5">
+              <label class="setting__value setting__value--checkebox" for="color-5">
                 Розовый
                 <input class="visually-hidden" type="checkbox" name="color-pink" id="color-5" value="Розовый">
               </label>
-              <label class="setting__value" for="color-6">
+              <label class="setting__value setting__value--checkebox" for="color-6">
                 Оранжевый
                 <input class="visually-hidden" type="checkbox" name="color-orange" id="color-6" value="Оранжевый">
               </label>
@@ -118,13 +123,13 @@
           <fieldset class="new-order__setting setting setting--phone">
             <legend class="setting__title">Телефон</legend>
 
-            <input class="setting__text-input" type="tel" name="Phone" pattern="(\+?\d[- .]*){7,13}" placeholder="+7 ХХХ ХХ ХХ*" required>
+            <input class="setting__text-input setting__text-input--phone" type="tel" name="Phone" pattern="(\+?\d[- .]*){7,13}" placeholder="+7 ХХХ ХХ ХХ*" required>
           </fieldset>
 
           <fieldset class="new-order__setting setting setting--email">
             <legend class="setting__title">E-MAIL</legend>
 
-            <input class="setting__text-input" type="email" name="E-mail" placeholder="Ваш Email*" required>
+            <input class="setting__text-input setting__text-input--email" type="email" name="E-mail" placeholder="Ваш Email*" required>
           </fieldset>
 
           <fieldset class="new-order__setting setting setting--textarea">

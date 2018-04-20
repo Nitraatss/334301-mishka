@@ -1,0 +1,21 @@
+.info__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-weight: 400;
+  font-size: $main-font-size;
+  line-height: 30px;
+  color: $grey-color;
+  letter-spacing: 0;
+}
+
+.info__text {
+  margin: 0;
+
+  font-style: italic;
+
+  &--email {
+    border-bottom: 1px solid $site-color;
+  }
+}

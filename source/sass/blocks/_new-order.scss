@@ -1,0 +1,33 @@
+.new-order {
+  margin-bottom: 55px;
+  padding: 0 30px;
+  padding-top: 23px;
+}
+
+.new-order__intro {
+  margin-bottom: 24px;
+
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 24px;
+  color: $grey-color;
+  letter-spacing: 0;
+}
+
+.new-order__form {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.new-order__rules {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: $grey-color;
+  letter-spacing: 0;
+}

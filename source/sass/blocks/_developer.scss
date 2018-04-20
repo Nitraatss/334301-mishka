@@ -1,0 +1,28 @@
+.developer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.developer__logo {
+  position: relative;
+
+  display: block;
+  width: 27px;
+  height: 34px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 27px;
+    height: 34px;
+
+    background-image: url("../img/htmlacademy.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
