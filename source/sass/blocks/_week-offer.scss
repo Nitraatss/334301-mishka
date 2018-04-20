@@ -18,9 +18,9 @@
   margin: 0;
 
   font-weight: 400;
-  font-size: 15px;
+  font-size: $main-font-size;
   line-height: 24px;
-  color: #444444;
+  color: $grey-color;
   letter-spacing: 0;
 }
 
@@ -33,6 +33,6 @@
   font-size: 17px;
   line-height: 24px;
   text-align: center;
-  color: #444444;
+  color: $grey-color;
   letter-spacing: 0;
 }

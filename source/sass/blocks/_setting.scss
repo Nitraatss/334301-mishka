@@ -76,7 +76,7 @@
     height: 42px;
 
     background-color: white;
-    border: 2px solid #444444;
+    border: 2px solid $grey-color;
     border-radius: 50%;
   }
 
@@ -93,7 +93,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 22px 16px;
-    border: 2px solid #444444;
+    border: 2px solid $grey-color;
   }
 
   &--checkebox-checked::before {
@@ -109,11 +109,11 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 18px;
-  color: #444444;
+  color: $grey-color;
   letter-spacing: 0;
 
   border: none;
-  border-bottom: 2px solid #444444;
+  border-bottom: 2px solid $grey-color;
 
   &--phone {
     position: relative;
@@ -135,11 +135,11 @@
   font-size: 17px;
   line-height: 18px;
   text-align: left;
-  color: #444444;
+  color: $grey-color;
   letter-spacing: 0;
 
   background: #ffffff;
-  border: 2px solid #444444;
+  border: 2px solid $grey-color;
 
   resize: none;
 }
