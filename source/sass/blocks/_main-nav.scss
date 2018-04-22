@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-left: auto;
 }
 
 .main-nav__toggle-button {
@@ -26,5 +27,22 @@
     background-image: url("../img/icon-menu-open.svg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle-button {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    width: 100%;
   }
 }

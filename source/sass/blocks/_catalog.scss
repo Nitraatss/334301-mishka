@@ -1,8 +1,33 @@
 .catalog {
+  padding: 0 30px;
+  padding-top: 30px;
+}
+
+.catalog__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 0 30px;
-  padding-top: 30px;
+  width: 260px;
+  margin: 0 auto;
+}
+
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding: 0 50px;
+    padding-top: 67px;
+  }
+
+  .catalog__wrapper {
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    justify-content: space-between;
+    align-items: stretch;
+    width: 1100px;
+  }
 }

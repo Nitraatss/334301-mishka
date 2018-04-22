@@ -51,6 +51,7 @@
 .setting__value {
   position: relative;
 
+  width: 100%;
   padding-left: 62px;
 
   &:not(:last-of-type) {
@@ -104,6 +105,7 @@
 .setting__text-input {
   position: relative;
 
+  width: 100%;
   padding: 16px 18px;
 
   font-weight: 400;
@@ -129,6 +131,7 @@
 }
 
 .setting__textarea {
+  width: 100%;
   padding: 17px;
 
   font-weight: 400;
@@ -142,4 +145,85 @@
   border: 2px solid $grey-color;
 
   resize: none;
+}
+
+@media (min-width: $tablet-width) {
+  .setting {
+    padding-top: 0;
+    padding-left: 166px;
+
+    &--colors {
+      background-color: #f1f1f1;
+
+      .setting__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .setting__value {
+          width: 50%;
+        }
+      }
+    }
+
+    &--user {
+      .setting__label {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 500px;
+
+        .setting__text-input {
+          margin-left: 12px;
+        }
+      }
+    }
+
+    &--phone,
+    &--email {
+      padding-top: 50px;
+
+      background-color: #f1f1f1;
+
+      .setting__text-input {
+        width: 500px;
+      }
+    }
+
+    &--email {
+      padding-top: 0;
+    }
+
+    &--textarea {
+      .setting__textarea {
+        width: 500px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .setting {
+    &--user {
+      .setting__label {
+        width: 700px;
+      }
+    }
+
+    &--phone,
+    &--email {
+      .setting__text-input {
+        width: 700px;
+      }
+    }
+
+    &--email {
+      padding-top: 0;
+    }
+
+    &--textarea {
+      .setting__textarea {
+        width: 700px;
+      }
+    }
+  }
 }

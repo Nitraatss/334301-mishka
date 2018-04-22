@@ -8,6 +8,11 @@
   letter-spacing: 0;
 }
 
+.popular-categories__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .popular-categories__list {
   margin: 0;
   padding: 0;
@@ -66,5 +71,39 @@
     height: 60px;
 
     background-image: url("../img/icon-interior.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .popular-categories {
+    margin-bottom: 51px;
+    padding: 0 50px;
+  }
+
+  .popular-categories__wrapper {
+    width: 668px;
+  }
+
+  .popular-categories__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .popular-categories__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popular-categories {
+    margin-bottom: 71px;
+    padding: 0 100px;
+  }
+
+  .popular-categories__wrapper {
+    width: 1000px;
   }
 }

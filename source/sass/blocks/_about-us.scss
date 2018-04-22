@@ -4,6 +4,15 @@
   padding-top: 30px;
 }
 
+.about-us__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.about-us__intro {
+  margin-bottom: 27px;
+}
+
 .about-us__features-list {
   margin: 0;
   padding: 0;
@@ -77,4 +86,38 @@
 
     background-image: url("../img/icon-feature-gift.svg");
   }
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    margin-bottom: 83px;
+    padding: 0 50px;
+    padding-top: 55px;
+  }
+
+  .about-us__wrapper {
+    width: 668px;
+  }
+
+  .about-us__intro {
+    margin-bottom: 40px;
+  }
+
+  .about-us__features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .about-us__feature {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    margin-bottom: 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
 }

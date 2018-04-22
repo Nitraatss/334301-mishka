@@ -3,10 +3,15 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  min-height: 285px;
+  width: 320px;
+  margin: 0 auto;
   padding: 22px;
 
+  border-top: 1px solid #ececec;
+
   &--img {
+    height: 285px;
+
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -14,6 +19,36 @@
   }
 
   &--no-img {
+    height: 177px;
+
     background-color: #f1f1f1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-intro {
+    align-items: flex-end;
+    width: $tablet-width;
+    padding: 22px 50px;
+
+    &--img {
+      height: 625px;
+    }
+
+    &--no-img {
+      align-items: center;
+      height: 226px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-intro {
+    width: $desktop-width;
+    padding: 22px 100px;
+
+    &--no-img {
+      height: 255px;
+    }
   }
 }

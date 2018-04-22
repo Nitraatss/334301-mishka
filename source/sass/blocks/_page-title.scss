@@ -7,3 +7,15 @@
   text-align: center;
   letter-spacing: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .page-intro--img .page-title {
+    margin-bottom: 352px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-intro--img .page-title {
+    margin-bottom: 333px;
+  }
+}

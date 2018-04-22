@@ -12,9 +12,40 @@
 }
 
 .main-header__wrapper {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 280px;
   margin: 0 auto;
+}
+
+.main-header__logo {
+  position: relative;
+  z-index: 2;
+
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    padding: 0 50px;
+  }
+
+  .main-header__wrapper {
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    padding: 0 100px;
+  }
+
+  .main-header__wrapper {
+    width: 1000px;
+    min-height: 88px;
+  }
 }

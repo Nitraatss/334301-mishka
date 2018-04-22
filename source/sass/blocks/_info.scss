@@ -1,6 +1,12 @@
 .info__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 260px;
   margin: 0;
-  padding: 0;
+  padding: 0 30px;
 
   list-style: none;
   font-weight: 400;
@@ -11,11 +17,36 @@
 }
 
 .info__text {
+  display: inline-block;
   margin: 0;
 
   font-style: italic;
 
   &--email {
     border-bottom: 1px solid $site-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .info__list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info__list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 320px;
+    margin: 0;
+    padding: 0;
   }
 }
