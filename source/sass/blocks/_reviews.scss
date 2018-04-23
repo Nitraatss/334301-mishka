@@ -1,11 +1,9 @@
 .reviews {
   margin-bottom: 45px;
-  padding: 0 30px;
 }
 
 .reviews__wrapper {
-  width: 260px;
-  margin: 0 auto;
+  @include container;
 }
 
 .reviews__slider {
@@ -18,20 +16,5 @@
 @media (min-width: $tablet-width) {
   .reviews {
     margin-bottom: 68px;
-    padding: 0 50px;
-  }
-
-  .reviews__wrapper {
-    width: 668px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .reviews {
-    padding: 0 100px;
-  }
-
-  .reviews__wrapper {
-    width: 1000px;
   }
 }

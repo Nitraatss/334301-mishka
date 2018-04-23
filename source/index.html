@@ -10,11 +10,11 @@
   <body>
     <header class="main-header">
       <div class="main-header__wrapper">
-        <a class="main-header__logo">
-          <img class="main-header__logo-img" src="./img/logo-mobile.svg" alt="Логотип сайта" width="86" height="35">
-        </a>
-
         <nav class="main-header__nav main-nav">
+          <a class="main-nav__logo">
+            <img class="main-header__logo-img" src="./img/logo-mobile.svg" alt="Логотип сайта" width="86" height="35">
+          </a>
+
           <button class="main-nav__toggle-button" type="button">
             <span class="visually-hidden">Переключатель меню</span>
           </button>
@@ -22,7 +22,7 @@
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="./catalog.html">
-                Каталог
+                Каталог товаров
               </a>
             </li>
             <li class="site-list__item">
@@ -30,6 +30,9 @@
                 Вязание на заказ
               </a>
             </li>
+          </ul>
+
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--search">
               <a href="#">
                 Поиск по сайту
@@ -42,24 +45,20 @@
             </li>
           </ul>
 
-          <section class="main-nav__under-menu under-menu">
-            <ul class="under-menu__list">
-              <li class="under-menu__item">
-                <a href="./catalog.html">Каталог товаров</a>
-              </li>
-              <li class="under-menu__item">
-                <a href="./form.html">Вязание на заказ</a>
-              </li>
-              <li class="under-menu__item">
-                <a href="#">Новые поступления</a>
-              </li>
-              <li class="under-menu__item">
-                <a href="#">Распродажа</a>
-              </li>
-            </ul>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--search">
+              <a href="#">
+                Новые поступления
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--basket">
+              <a href="#">
+                Распродажа
+              </a>
+            </li>
+          </ul>
 
-            <span class="under-menu__delivery-info">Бесплатная доставка по России</span>
-          </section>
+          <span class="main-nav__delivery-info">Бесплатная доставка по России</span>
         </nav>
       </div>
     </header>
@@ -94,10 +93,12 @@
 
       <section class="week-offer">
         <div class="week-offer__wrapper">
-          <h2 class="week-offer__intro section-intro">
-            Вязаные корзинки
-          </h2>
-          <span class="week-offer__subintro">Товар недели</span>
+          <div class="week-offer__intro-subwrapper">
+            <h2 class="week-offer__intro section-intro">
+              Вязаные корзинки
+            </h2>
+            <span class="week-offer__subintro">Товар недели</span>
+          </div>
 
           <div class="week-offer__information">
             <p class="week-offer__description">

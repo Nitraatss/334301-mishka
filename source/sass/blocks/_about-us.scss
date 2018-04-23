@@ -1,12 +1,10 @@
 .about-us {
   margin-bottom: 60px;
-  padding: 0 30px;
   padding-top: 30px;
 }
 
 .about-us__wrapper {
-  width: 260px;
-  margin: 0 auto;
+  @include container;
 }
 
 .about-us__intro {
@@ -91,12 +89,7 @@
 @media (min-width: $tablet-width) {
   .about-us {
     margin-bottom: 83px;
-    padding: 0 50px;
     padding-top: 55px;
-  }
-
-  .about-us__wrapper {
-    width: 668px;
   }
 
   .about-us__intro {
@@ -116,5 +109,15 @@
     align-items: flex-start;
     width: 50%;
     margin-bottom: 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us__wrapper {
+    padding-left: 225px;
+  }
+
+  .about-us__features-list {
+    width: 700px;
   }
 }

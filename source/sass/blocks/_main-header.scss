@@ -1,5 +1,5 @@
 .main-header {
-  padding: 22px 30px;
+  padding: 22px 0;
 
   font-weight: 700;
   font-size: 17px;
@@ -18,34 +18,20 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 280px;
-  margin: 0 auto;
+
+  @include container;
 }
 
-.main-header__logo {
-  position: relative;
-  z-index: 2;
-
-  display: block;
-}
 
 @media (min-width: $tablet-width) {
   .main-header {
-    padding: 0 50px;
-  }
-
-  .main-header__wrapper {
-    width: 668px;
+    margin-bottom: -64px;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-header {
-    padding: 0 100px;
-  }
-
   .main-header__wrapper {
-    width: 1000px;
     min-height: 88px;
   }
 }

@@ -9,8 +9,7 @@
 }
 
 .popular-categories__wrapper {
-  width: 320px;
-  margin: 0 auto;
+  @include container;
 }
 
 .popular-categories__list {
@@ -77,11 +76,6 @@
 @media (min-width: $tablet-width) {
   .popular-categories {
     margin-bottom: 51px;
-    padding: 0 50px;
-  }
-
-  .popular-categories__wrapper {
-    width: 668px;
   }
 
   .popular-categories__list {
@@ -100,10 +94,5 @@
 @media (min-width: $desktop-width) {
   .popular-categories {
     margin-bottom: 71px;
-    padding: 0 100px;
-  }
-
-  .popular-categories__wrapper {
-    width: 1000px;
   }
 }

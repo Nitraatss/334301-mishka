@@ -1,12 +1,10 @@
 .new-order {
   margin-bottom: 55px;
-  padding: 0 30px;
   padding-top: 23px;
 }
 
 .new-order__wrapper {
-  width: 260px;
-  margin: 0 auto;
+  @include container;
 }
 
 .new-order__intro {
@@ -46,12 +44,10 @@
 @media (min-width: $tablet-width) {
   .new-order {
     margin-bottom: 50px;
-    padding: 0 50px;
     padding-top: 61px;
   }
 
   .new-order__wrapper {
-    width: 668px;
     margin-bottom: 66px;
   }
 
@@ -64,10 +60,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .new-order {
-    padding: 0 100px;
-  }
-
   .new-order__intro {
     width: 700px;
     margin: 0 auto;
@@ -75,7 +67,8 @@
   }
 
   .new-order__wrapper {
-    width: 1000px;
+    width: 950px;
     margin-bottom: 66px;
+    padding: 0 100px;
   }
 }
