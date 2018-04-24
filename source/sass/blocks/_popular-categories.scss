@@ -1,5 +1,5 @@
 .popular-categories {
-  margin-bottom: 33px;
+  margin-bottom: 31px;
 
   font-weight: 700;
   font-size: 19px;
@@ -9,7 +9,8 @@
 }
 
 .popular-categories__wrapper {
-  @include container;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .popular-categories__list {
@@ -28,34 +29,36 @@
 }
 
 .popular-categories__link {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  height: 105px;
+  min-height: 105px;
   padding: 30px 28px;
 }
 
 .popular-categories__title {
-  position: relative;
-
   width: 100%;
+  max-width: 145px;
   margin: 0;
 
   vertical-align: middle;
   text-align: left;
+  word-wrap: break-word;
 
   &::after {
     content: "";
     position: absolute;
-    top: 0;
 
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--interior::after {
-    right: 0;
+    top: 23px;
+    left: 244px;
 
     width: 40px;
     height: 62px;
@@ -64,7 +67,8 @@
   }
 
   &--toys::after {
-    right: 0;
+    top: 21px;
+    left: 233px;
 
     width: 60px;
     height: 60px;
@@ -75,7 +79,16 @@
 
 @media (min-width: $tablet-width) {
   .popular-categories {
-    margin-bottom: 51px;
+    margin-top: -119px;
+    margin-bottom: 39px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .popular-categories__wrapper {
+    width: 768px;
+    padding: 0 50px;
   }
 
   .popular-categories__list {
@@ -88,6 +101,10 @@
 
   .popular-categories__item {
     width: 50%;
+  }
+
+  .popular-categories__link {
+    min-height: 119px;
   }
 }
 

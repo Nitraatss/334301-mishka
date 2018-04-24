@@ -1,17 +1,27 @@
 .main-nav {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   margin-left: auto;
 }
 
-.main-header__logo {
+.main-nav__logo {
   display: block;
+  height: 79px;
+  padding: 22px 0;
+
+  img {
+    margin: 0 auto;
+  }
 }
 
 .main-nav__toggle-button {
-  position: relative;
+  position: absolute;
+  top: 32px;
+  left: 269px;
 
   width: 20px;
   height: 21px;

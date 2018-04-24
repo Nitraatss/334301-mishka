@@ -1,4 +1,5 @@
 .page-title {
+  max-width: 100%;
   margin: 0;
 
   font-weight: 700;
@@ -6,6 +7,7 @@
   line-height: 30px;
   text-align: center;
   letter-spacing: 0;
+  word-wrap: break-word;
 }
 
 @media (min-width: $tablet-width) {

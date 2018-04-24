@@ -1,6 +1,8 @@
 .about-us {
   margin-bottom: 60px;
-  padding-top: 30px;
+  padding-top: 33px;
+
+  border-top: 1px solid black;
 }
 
 .about-us__wrapper {
@@ -26,8 +28,11 @@
 .about-us__feature {
   position: relative;
 
+  max-width: 100%;
   margin-bottom: 33px;
-  padding-top: 54px;
+  padding-top: 58px;
+
+  word-wrap: break-word;
 
   &:last-of-type {
     margin: 0;
@@ -37,7 +42,7 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 8px;
 
     background-repeat: no-repeat;
     background-position: center;
@@ -107,8 +112,45 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 50%;
+    width: 100%;
     margin-bottom: 58px;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    &--eco {
+      order: 1;
+      max-width: 230px;
+      margin-right: 99px;
+    }
+
+    &--tailor {
+      order: 2;
+      max-width: 290px;
+    }
+
+    &--money {
+      order: 3;
+      max-width: 240px;
+      margin-right: 99px;
+    }
+
+    &--rocket {
+      order: 4;
+      max-width: 310px;
+    }
+
+    &--like {
+      order: 5;
+      max-width: 240px;
+      margin-right: 99px;
+      margin-bottom: 0;
+    }
+
+    &--gift {
+      order: 6;
+      max-width: 290px;
+    }
   }
 }
 

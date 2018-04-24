@@ -2,42 +2,59 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 320px;
   margin: 0 auto;
-  padding: 22px;
+  padding: 30px;
 
   border-top: 1px solid #ececec;
 
   &--img {
-    height: 285px;
+    min-height: 283px;
 
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    .page-intro__title {
+      margin-top: 40px;
+    }
   }
 
   &--no-img {
     height: 177px;
 
     background-color: #f1f1f1;
+
+    .page-catalog__title,
+    .page-form__title {
+      margin-top: 45px;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .page-intro {
-    align-items: flex-end;
+    align-items: flex-start;
     width: $tablet-width;
     padding: 22px 50px;
 
     &--img {
-      height: 625px;
+      min-height: 746px;
+
+      .page-intro__title {
+        margin-top: 140px;
+      }
     }
 
     &--no-img {
-      align-items: center;
-      height: 226px;
+      min-height: 226px;
+
+      .page-catalog__title,
+      .page-form__title {
+        margin-top: 80px;
+      }
     }
   }
 }

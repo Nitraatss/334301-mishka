@@ -46,12 +46,12 @@
           </ul>
 
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--search">
+            <li class="site-list__item site-list__item--new">
               <a href="#">
                 Новые поступления
               </a>
             </li>
-            <li class="site-list__item site-list__item--basket">
+            <li class="site-list__item site-list__item--sales">
               <a href="#">
                 Распродажа
               </a>
@@ -78,8 +78,8 @@
           </p>
 
           <form class="new-order__form" method="post" action="https://echo.htmlacademy.ru">
-            <fieldset class="new-order__setting setting setting--type">
-              <legend class="setting__title">Тип</legend>
+            <div class="new-order__setting setting setting--type">
+              <span class="setting__title">Тип</span>
 
               <div class="setting__wrapper">
                 <label class="setting__value setting__value--radio setting__value--radio-checked" for="type-1">
@@ -91,10 +91,10 @@
                   Детская игрушка
                 </label>
               </div>
-            </fieldset>
+            </div>
 
-            <fieldset class="new-order__setting setting setting--colors">
-              <legend class="setting__title">Цвет</legend>
+            <div class="new-order__setting setting setting--colors">
+              <span class="setting__title">Цвет</span>
               <div class="setting__wrapper">
                 <label class="setting__value setting__value--checkebox setting__value--checkebox-checked" for="color-1">
                   Белый
@@ -121,44 +121,46 @@
                   <input class="visually-hidden" type="checkbox" name="color-orange" id="color-6" value="Оранжевый">
                 </label>
               </div>
-            </fieldset>
+            </div>
 
-            <fieldset class="new-order__setting setting setting--user">
-              <legend class="setting__title">ФИО</legend>
-              <label class="setting__label">
-                Имя:
-                <input class="setting__text-input" type="text" name="First name" placeholder="Введите ваше имя*" required>
-              </label>
+            <div class="new-order__setting setting setting--user">
+              <span class="setting__title">ФИО</span>
+              <div class="setting--user__wrapper">
+                <label class="setting__label">
+                  Имя:
+                  <input class="setting__text-input" type="text" name="First name" placeholder="Введите ваше имя*" required>
+                </label>
 
-              <label class="setting__label">
-                Фамилия:
-                <input class="setting__text-input" type="text" name="Last name" placeholder="Укажите фамилию*" required>
-              </label>
+                <label class="setting__label">
+                  Фамилия:
+                  <input class="setting__text-input" type="text" name="Last name" placeholder="Укажите фамилию*" required>
+                </label>
 
-              <label class="setting__label">
-                Отчество:
-                <input class="setting__text-input" type="text" name="Middle name" placeholder="Отчество, если желаете">
-              </label>
-            </fieldset>
+                <label class="setting__label">
+                  Отчество:
+                  <input class="setting__text-input" type="text" name="Middle name" placeholder="Отчество, если желаете">
+                </label>
+              </div>
+            </div>
 
-            <fieldset class="new-order__setting setting setting--phone">
-              <legend class="setting__title">Телефон</legend>
+            <div class="new-order__setting setting setting--phone">
+              <span class="setting__title">Тел</span>
 
               <input class="setting__text-input setting__text-input--phone" type="tel" name="Phone" pattern="(\+?\d[- .]*){7,13}" placeholder="+7 ХХХ ХХ ХХ*" required>
-            </fieldset>
+            </div>
 
-            <fieldset class="new-order__setting setting setting--email">
-              <legend class="setting__title">E-MAIL</legend>
+            <div class="new-order__setting setting setting--email">
+              <span class="setting__title">E-MAIL</span>
 
               <input class="setting__text-input setting__text-input--email" type="email" name="E-mail" placeholder="Ваш Email*" required>
-            </fieldset>
+            </div>
 
-            <fieldset class="new-order__setting setting setting--textarea">
-              <legend class="setting__title">ДОП</legend>
+            <div class="new-order__setting setting setting--textarea">
+              <span class="setting__title">ДОП</span>
 
               <textarea class="setting__textarea" name="Additional info" placeholder="Опишите свои пожелания к заказу">
               </textarea>
-            </fieldset>
+            </div>
 
             <div class="new-order__form-ending">
               <p class="new-order__rules">
