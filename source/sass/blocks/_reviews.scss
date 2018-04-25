@@ -3,6 +3,8 @@
 }
 
 .reviews__wrapper {
+  position: relative;
+
   @include container;
 }
 
@@ -37,14 +39,29 @@
   .reviews__controls {
     position: absolute;
     right: 50px;
+    bottom: 0;
   }
 
   .reviews__button {
     position: absolute;
-    top: 82px;
+    top: 0;
     right: 50px;
     z-index: 2;
 
     width: 175px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    position: relative;
+
+    margin-bottom: 169px;
+    padding-top: 78px;
+  }
+
+  .reviews__intro {
+    margin-bottom: 44px;
   }
 }

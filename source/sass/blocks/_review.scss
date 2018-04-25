@@ -37,3 +37,11 @@
     font-size: 17px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .review::before {
+    top: -176px;
+    left: -50px;
+    z-index: -1;
+  }
+}

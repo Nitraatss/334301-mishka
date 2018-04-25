@@ -173,18 +173,37 @@
   .week-offer__intro-subwrapper {
     flex-direction: row-reverse;
     justify-content: flex-end;
+    margin-bottom: 41px;
+  }
+
+  .week-offer__subintro {
+    margin-right: 43px;
+    margin-left: 32px;
   }
 
   .week-offer__information {
-    width: 50%;
+    max-width: 290px;
+    margin: 0;
+    margin-bottom: 291px;
+    margin-left: 175px;
+    padding: 0;
   }
 
   .week-offer__figure {
-    width: 50%;
+    position: absolute;
+    top: -61px;
+    left: 575px;
+    z-index: -1;
+
+    width: 525px;
   }
 
   .week-offer__image {
-    width: 100%;
+    width: 525px;
     height: 636px;
+  }
+
+  .week-offer__money {
+    left: 225px;
   }
 }

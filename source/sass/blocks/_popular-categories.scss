@@ -80,7 +80,7 @@
 @media (min-width: $tablet-width) {
   .popular-categories {
     margin-top: -119px;
-    margin-bottom: 39px;
+    margin-bottom: 59px;
 
     font-size: 20px;
     line-height: 30px;
@@ -110,6 +110,11 @@
 
 @media (min-width: $desktop-width) {
   .popular-categories {
-    margin-bottom: 71px;
+    margin-bottom: 132px;
+  }
+
+  .popular-categories__wrapper {
+    width: 1150px;
+    padding: 0 50px;
   }
 }

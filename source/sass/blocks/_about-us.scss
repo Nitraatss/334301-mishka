@@ -155,6 +155,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .about-us {
+    margin-bottom: 90px;
+    padding-top: 90px;
+  }
+
   .about-us__wrapper {
     padding-left: 225px;
   }
