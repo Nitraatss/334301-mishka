@@ -1,10 +1,32 @@
 .week-offer {
   margin: 0 auto;
   margin-bottom: 36px;
-  padding: 0 30px;
+}
+
+.week-offer__wrapper {
+  margin: 0 auto;
+
+  @include container;
+}
+
+.week-offer__intro-subwrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.week-offer__intro {
+  width: auto;
+  margin-bottom: 2px;
 }
 
 .week-offer__subintro {
+  width: auto;
+  max-width: 165px;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
@@ -12,27 +34,176 @@
   color: $site-color;
   text-transform: uppercase;
   letter-spacing: 0;
+  word-wrap: break-word;
+}
+
+.week-offer__information {
+  margin-bottom: 28px;
 }
 
 .week-offer__description {
+  max-width: 100%;
   margin: 0;
+  margin-bottom: 30px;
 
   font-weight: 400;
   font-size: $main-font-size;
   line-height: 24px;
   color: $grey-color;
   letter-spacing: 0;
+  word-wrap: break-word;
 }
 
 .week-offer__params {
+  width: 100%;
+
   border-collapse: collapse;
 }
 
+.week-offer__figure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.week-offer__image {
+  width: 100%;
+  height: 315px;
+}
+
+.week-offer__money {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .week-offer__price {
+  margin-bottom: 24px;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   text-align: center;
   color: $grey-color;
   letter-spacing: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .week-offer {
+    margin-bottom: 52px;
+  }
+
+  .week-offer__wrapper {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .week-offer__intro-subwrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 57px;
+  }
+
+  .week-offer__subintro {
+    display: inline-block;
+    max-width: 110px;
+
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .week-offer__information {
+    width: 50%;
+    padding-right: 43px;
+  }
+
+  .week-offer__description {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .week-offer__figure {
+    width: 50%;
+    margin: 0;
+  }
+
+  .week-offer__image {
+    width: 100%;
+    height: 404px;
+  }
+
+  .week-offer__money {
+    position: absolute;
+    top: 400px;
+    left: 50px;
+
+    width: 50%;
+    max-width: 334px;
+    padding-right: 43px;
+  }
+
+  .week-offer__price {
+    margin-bottom: 33px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .week-offer__button {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .week-offer {
+    margin-bottom: 73px;
+  }
+
+  .week-offer__intro-subwrapper {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-bottom: 41px;
+  }
+
+  .week-offer__subintro {
+    margin-right: 43px;
+    margin-left: 32px;
+  }
+
+  .week-offer__information {
+    max-width: 290px;
+    margin: 0;
+    margin-bottom: 291px;
+    margin-left: 175px;
+    padding: 0;
+  }
+
+  .week-offer__figure {
+    position: absolute;
+    top: -61px;
+    left: 575px;
+    z-index: -1;
+
+    width: 525px;
+  }
+
+  .week-offer__image {
+    width: 525px;
+    height: 636px;
+  }
+
+  .week-offer__money {
+    left: 225px;
+  }
 }

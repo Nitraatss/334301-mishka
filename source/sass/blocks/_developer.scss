@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .developer__logo {
@@ -11,6 +11,7 @@
   display: block;
   width: 27px;
   height: 34px;
+  margin-left: 29px;
 
   &::before {
     content: "";
@@ -24,5 +25,6 @@
     background-image: url("../img/htmlacademy.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
   }
 }

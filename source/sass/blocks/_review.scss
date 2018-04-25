@@ -1,9 +1,47 @@
+.review {
+  position: relative;
+}
+
 .review__text {
+  max-width: 100%;
   margin: 0;
+  margin-bottom: 50px;
 
   font-weight: 400;
   font-size: $main-font-size;
   line-height: 30px;
   color: $grey-color;
   letter-spacing: 0;
+  word-wrap: break-word;
+}
+
+@media (min-width: $tablet-width) {
+  .review::before {
+    content: "";
+    position: absolute;
+    top: -176px;
+    left: -50px;
+    z-index: -1;
+
+    width: 350px;
+    min-height: 457px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .review__text {
+    margin-bottom: 65px;
+
+    font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review::before {
+    top: -176px;
+    left: -50px;
+    z-index: -1;
+  }
 }

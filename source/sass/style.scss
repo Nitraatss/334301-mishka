@@ -1,5 +1,6 @@
 @import "variables.scss";
 @import "global.scss";
+@import "mixins.scss";
 @import "blocks/main-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
@@ -19,6 +20,7 @@
 @import "blocks/author.scss";
 @import "blocks/controls.scss";
 @import "blocks/contacts.scss";
+@import "blocks/map.scss";
 @import "blocks/info.scss";
 @import "blocks/catalog.scss";
 @import "blocks/product.scss";

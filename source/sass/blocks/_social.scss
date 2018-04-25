@@ -1,8 +1,17 @@
+.social {
+  width: 260px;
+  margin-bottom: 22px;
+  padding-bottom: 29px;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .social__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  width: 100%;
   margin: 0;
   padding: 0;
 
@@ -20,9 +29,13 @@
   height: 21px;
 }
 
-.social__item--fb a {
-  width: 15px;
-  height: 28px;
+.social__item--fb {
+  margin: 0 40px;
+
+  a {
+    width: 15px;
+    height: 28px;
+  }
 }
 
 .social__item--tw a {
@@ -59,4 +72,14 @@
   height: 20px;
 
   background-image: url("../img/icon-twitter.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 142px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    border-bottom: none;
+  }
 }

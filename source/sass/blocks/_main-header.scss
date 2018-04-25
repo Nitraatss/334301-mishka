@@ -1,6 +1,4 @@
 .main-header {
-  padding: 22px 30px;
-
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -12,9 +10,26 @@
 }
 
 .main-header__wrapper {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+
+  @include container;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    margin-bottom: -64px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__wrapper {
+    min-height: 88px;
+  }
 }

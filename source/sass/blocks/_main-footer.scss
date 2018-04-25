@@ -1,8 +1,8 @@
 .main-footer {
-  padding-top: 20px;
-  padding-right: 30px;
+  width: 100%;
+  min-width: inherit;
+  padding-top: 25px;
   padding-bottom: 25px;
-  padding-left: 30px;
 
   font-weight: 700;
   font-size: 19px;
@@ -12,4 +12,39 @@
   letter-spacing: 0;
 
   background-color: #f1f1f1;
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  @include container;
+}
+
+.main-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    padding: 57px 0;
+  }
+
+  .main-footer__wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-footer__logo {
+    display: block;
+    width: 102px;
+    height: 34px;
+  }
+
+  .main-footer__logo-img {
+    width: 100%;
+    height: inherit;
+  }
 }

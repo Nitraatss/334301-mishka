@@ -1,20 +1,31 @@
 .new-order {
   margin-bottom: 55px;
-  padding: 0 30px;
   padding-top: 23px;
 }
 
-.new-order__intro {
-  margin-bottom: 24px;
+.new-order__wrapper {
+  @include container;
+}
 
-  font-weight: 700;
+.new-order__intro {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: 400;
   font-size: 13px;
   line-height: 24px;
   color: $grey-color;
   letter-spacing: 0;
+  word-wrap: break-word;
 }
 
 .new-order__form {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -23,11 +34,68 @@
 }
 
 .new-order__rules {
+  max-width: 100%;
   margin: 0;
   margin-bottom: 30px;
 
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: $grey-color;
   letter-spacing: 0;
+  word-wrap: break-word;
+}
+
+@media (min-width: $tablet-width) {
+  .new-order {
+    margin-bottom: 50px;
+    padding-top: 61px;
+  }
+
+  .new-order__intro {
+    margin-bottom: 74px;
+    padding: 0 50px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .new-order__wrapper {
+    margin-bottom: 66px;
+    padding: 0;
+  }
+
+  .new-order__form-ending {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+  }
+
+  .new-order__rules {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .new-order__intro {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 66px;
+    padding: 0;
+  }
+
+  .new-order__wrapper {
+    width: 1150px;
+    margin-bottom: 66px;
+  }
+
+  .new-order__form {
+    padding: 0;
+  }
+
+  .new-order__form-ending {
+    padding: 0 225px;
+  }
 }

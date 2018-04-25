@@ -1,8 +1,10 @@
 .button {
   display: block;
-  width: 259px;
+  width: 100%;
+  max-width: 260px;
   padding: 16px;
 
+  font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   text-align: center;

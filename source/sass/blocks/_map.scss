@@ -1,0 +1,18 @@
+.map__img {
+  width: 320px;
+  height: 457px;
+}
+
+@media (min-width: $tablet-width) {
+  .map__img {
+    width: 768px;
+    height: 457px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__img {
+    width: 525px;
+    height: 457px;
+  }
+}

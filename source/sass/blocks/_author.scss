@@ -1,15 +1,37 @@
 .author {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+
   font-size: 17px;
   line-height: 1.412;
   color: black;
 }
 
 .author__name {
+  max-width: 100%;
+
   font-weight: 700;
   text-align: left;
+  word-wrap: break-word;
 }
 
 .author__social {
+  max-width: 100%;
+
   font-weight: 400;
   text-align: left;
+  word-wrap: break-word;
+}
+
+@media (min-width: $tablet-width) {
+  .author {
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 285px;
+
+    font-size: 18px;
+  }
 }

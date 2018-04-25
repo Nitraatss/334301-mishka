@@ -1,8 +1,27 @@
 .catalog {
+  margin-bottom: 30px;
+  padding-top: 30px;
+}
+
+.catalog__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 0 30px;
-  padding-top: 30px;
+
+  @include container;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    margin-bottom: 53px;
+    padding-top: 67px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
