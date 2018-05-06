@@ -71,9 +71,9 @@
   }
 }
 
-#op-1:checked ~ label[for="op-1"],
-#op-2:checked ~ label[for="op-2"],
-#op-3:checked ~ label[for="op-3"] {
+.op-1:checked ~ label[for="op-1"],
+.op-2:checked ~ label[for="op-2"],
+.op-3:checked ~ label[for="op-3"] {
   border: 2px solid $site-color;
 }
 
@@ -91,13 +91,6 @@
 
   background-color: $site-color;
   border: none;
-}
-
-#op-1:checked ~ label[for="op-1"]::before,
-#op-2:checked ~ label[for="op-2"]::before,
-#op-3:checked ~ label[for="op-3"]::before {
-  background-color: $site-color;
-  box-shadow: inset 0 0 0 13px white;
 }
 
 @media (min-width: $tablet-width) {
