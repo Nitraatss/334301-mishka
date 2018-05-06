@@ -1,5 +1,4 @@
 .site-list {
-  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -40,9 +39,41 @@
   }
 }
 
+.site-list__item--search {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 32px;
+
+    width: 18px;
+    height: 18px;
+
+    background-image: url("../img/icon-search.svg");
+  }
+}
+
+.site-list__item--basket {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    left: 32px;
+
+    width: 21px;
+    height: 18px;
+
+    background-image: url("../img/icon-cart.svg");
+  }
+}
 
 @media (min-width: $tablet-width) {
   .site-list {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: auto;
@@ -61,7 +92,10 @@
     }
 
     &:nth-of-type(2) {
-      width: 396px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 348px;
       height: 88px;
 
       .site-list__item {
@@ -79,14 +113,53 @@
     background-color: transparent;
     border: none;
   }
+
+  .site-list__item--search {
+    width: 82px;
+
+    font-size: 0;
+
+    &::before {
+      top: 50%;
+      left: 50%;
+
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  .site-list__item--basket {
+    padding-left: 82px;
+
+    &::before {
+      top: 35px;
+      left: 31px;
+    }
+  }
 }
 
 
 @media (min-width: $desktop-width) {
   .site-list {
     &:nth-of-type(1) {
-      width: 402px;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
       min-height: 88px;
+
+      font-size: 17px;
+      line-height: 24px;
+
+      .site-list__item {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+        &:first-of-type {
+          max-width: 234px;
+          padding-right: 35px;
+
+          border-right: 1px solid #ececec;
+        }
+      }
     }
 
     &:nth-of-type(2) {
@@ -98,9 +171,12 @@
       display: flex;
       height: 64px;
 
+      font-size: 15px;
+      line-height: 24px;
+
       .site-list__item:first-of-type {
         min-height: 64px;
-        margin-right: 35px;
+        margin-right: 62px;
       }
     }
   }

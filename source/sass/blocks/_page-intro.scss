@@ -38,7 +38,12 @@
   .page-intro {
     align-items: flex-start;
     width: $tablet-width;
-    padding: 22px 50px;
+    padding: 13px 50px;
+
+    .page-intro__title {
+      font-size: 43px;
+      line-height: 50px;
+    }
 
     &--img {
       min-height: 746px;
@@ -61,8 +66,13 @@
 
 @media (min-width: $desktop-width) {
   .page-intro {
-    width: $desktop-width;
-    padding: 22px 50px;
+    width: $desktop-width + 100px;
+    padding: 14px 0;
+
+    .page-intro__title {
+      font-size: 53px;
+      line-height: 57px;
+    }
 
     &--no-img {
       height: 255px;

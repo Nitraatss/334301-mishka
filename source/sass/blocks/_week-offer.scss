@@ -15,12 +15,12 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  margin-bottom: 22px;
+  margin-bottom: 52px;
 }
 
 .week-offer__intro {
   width: auto;
-  margin-bottom: 2px;
+  margin-bottom: 0;
 }
 
 .week-offer__subintro {
@@ -44,7 +44,7 @@
 .week-offer__description {
   max-width: 100%;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 
   font-weight: 400;
   font-size: $main-font-size;
@@ -66,7 +66,7 @@
   justify-content: center;
   align-items: flex-start;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .week-offer__image {
@@ -82,7 +82,7 @@
 }
 
 .week-offer__price {
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 
   font-weight: 700;
   font-size: 17px;
@@ -94,7 +94,7 @@
 
 @media (min-width: $tablet-width) {
   .week-offer {
-    margin-bottom: 52px;
+    margin-bottom: 63px;
   }
 
   .week-offer__wrapper {
@@ -110,7 +110,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 57px;
+    margin-bottom: 53px;
   }
 
   .week-offer__subintro {
@@ -124,10 +124,13 @@
 
   .week-offer__information {
     width: 50%;
+    margin-top: -5px;
     padding-right: 43px;
   }
 
   .week-offer__description {
+    margin-bottom: 35px;
+
     font-size: 17px;
     line-height: 30px;
   }
@@ -167,31 +170,35 @@
 
 @media (min-width: $desktop-width) {
   .week-offer {
-    margin-bottom: 73px;
+    margin-bottom: 0;
   }
 
   .week-offer__intro-subwrapper {
     flex-direction: row-reverse;
     justify-content: flex-end;
-    margin-bottom: 41px;
+    margin-bottom: 48px;
   }
 
   .week-offer__subintro {
-    margin-right: 43px;
-    margin-left: 32px;
+    margin-right: 33px;
+    margin-left: 27px;
   }
 
   .week-offer__information {
     max-width: 290px;
     margin: 0;
-    margin-bottom: 291px;
+    margin-bottom: 305px;
     margin-left: 175px;
     padding: 0;
   }
 
+  .week-offer__description {
+    margin-bottom: 50px;
+  }
+
   .week-offer__figure {
     position: absolute;
-    top: -61px;
+    top: -52px;
     left: 575px;
     z-index: -1;
 
@@ -204,6 +211,7 @@
   }
 
   .week-offer__money {
-    left: 225px;
+    top: 474px;
+    left: 226px;
   }
 }

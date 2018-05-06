@@ -14,7 +14,7 @@
 
 .reviews__slider {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   padding: 0;
 
   list-style: none;
@@ -44,7 +44,7 @@
 
   .reviews__button {
     position: absolute;
-    top: 0;
+    top: -2px;
     right: 50px;
     z-index: 2;
 
@@ -59,9 +59,20 @@
 
     margin-bottom: 169px;
     padding-top: 78px;
+
+    .reviews__wrapper {
+      width: 1050px;
+      padding: 0;
+    }
   }
 
   .reviews__intro {
     margin-bottom: 44px;
+    margin-left: 175px;
+  }
+
+  .reviews__button {
+    top: 4px;
+    right: 0;
   }
 }

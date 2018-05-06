@@ -12,6 +12,7 @@
 
 .author__name {
   max-width: 100%;
+  margin-bottom: 7px;
 
   font-weight: 700;
   text-align: left;
@@ -33,5 +34,11 @@
     max-width: 285px;
 
     font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .author {
+    margin-left: 175px;
   }
 }

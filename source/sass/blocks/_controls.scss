@@ -45,8 +45,8 @@
 @media (min-width: $tablet-width) {
   .controls {
     position: absolute;
-    right: 50px;
-    bottom: 0;
+    right: -35px;
+    bottom: 3px;
 
     width: 258px;
     margin: 0;
@@ -57,6 +57,14 @@
   }
 
   .controls__button {
+    width: 85px;
+
     border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .controls {
+    right: -82px;
   }
 }
