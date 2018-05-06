@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/334301-mishka/5/">
+</head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__wrapper">
+        <nav class="main-header__nav main-nav">
+          <a class="main-nav__logo" href="./index.html">
+            <img class="main-header__logo-img" src="./img/logo-mobile.svg" alt="Логотип сайта" width="86" height="35">
+          </a>
+
+          <button class="main-nav__toggle-button" type="button">
+            <span class="visually-hidden">Переключатель меню</span>
+          </button>
+
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="./catalog.html">
+                Каталог товаров
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="./form.html">
+                Вязание на заказ
+              </a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--search">
+              <a href="#">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--basket">
+              <a href="#">
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--new">
+              <a href="#">
+                Новые поступления
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--sales">
+              <a href="#">
+                Распродажа
+              </a>
+            </li>
+          </ul>
+
+          <span class="main-nav__delivery-info">Бесплатная доставка по России</span>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-catalog">
+      <section class="page-intro page-intro--no-img">
+        <h1 class="page-catalog__title page-title">
+          Каталог товаров
+        </h1>
+      </section>
+
+      <section class="catalog">
+        <div class="catalog__wrapper">
+          <h2 class="visually-hidden">Товары</h2>
+
+          <article class="catalog__product product">
+            <a class="product__image" href="#">
+              <img src="./img/photo-hare-mobile@1x.jpg" alt="Изображение товара" width="260" height="195">
+            </a>
+            <div class="product__wrapper">
+              <div class="product__description">
+                <h3 class="product__title">
+                  <a href="#">Зайчик-попрыгайчик</a>
+                </h3>
+                <p class="product__info">Рост 30 см, вес 200 г</p>
+              </div>
+
+              <div class="product__money">
+                <span class="product__price">1 200 руб.</span>
+                <button class="product__add-to-basket-btn" type="button">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog__product product">
+            <a class="product__image" href="#">
+              <img src="./img/photo-bowl-mobile@1x.jpg" alt="Изображение товара" width="260" height="195">
+            </a>
+            <div class="product__wrapper">
+              <div class="product__description">
+                <h3 class="product__title">
+                  <a href="#">Корзинка для белья</a>
+                </h3>
+                <p class="product__info">Диаметр 15 см, высота 10 см</p>
+              </div>
+
+              <div class="product__money">
+                <span class="product__price">690 руб.</span>
+                <button class="product__add-to-basket-btn" type="button">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="catalog__product product">
+            <a class="product__image" href="#">
+              <img src="./img/photo-toys-mobile@1x.jpg" alt="Изображение товара" width="260" height="195">
+            </a>
+            <div class="product__wrapper">
+              <div class="product__description">
+                <h3 class="product__title">
+                  <a href="#">Большая корзина<br>для игрушек</a>
+                </h3>
+                <p class="product__info">Большая корзина для игрушек</p>
+              </div>
+
+              <div class="product__money">
+                <span class="product__price">690 руб.</span>
+                <button class="product__add-to-basket-btn" type="button">
+                  <span class="visually-hidden">Добавить в корзину</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="production">
+        <div class="production__wrapper">
+          <h2 class="production__intro">
+            Процесс производства
+          </h2>
+
+          <div class="production__subwrapper">
+            <img class="production__video" src="./img/video-mobile@1x.jpg" alt="Изображение товара" width="260" height="150">
+
+            <button class="production__play-video" type="button">
+              <span class="visually-hidden">Воспроизвести видео</span>
+            </button>
+          </div>
+
+          <div class="production__order">
+            <p class="production__info">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            </p>
+
+            <a class="production__button button" href="#">
+              Сделать заказ
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <a class="main-footer__logo" href="./index.html">
+          <img class="main-footer__logo-img" src="./img/logo-mobile.svg" alt="Логотип сайта" width="86" height="35">
+        </a>
+
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item social__item--inst">
+              <a href="#">
+                <span class="visually-hidden">instagramm</span>
+              </a>
+            </li>
+            <li class="social__item social__item--fb">
+              <a href="#">
+                <span class="visually-hidden">facebook</span>
+              </a>
+            </li>
+            <li class="social__item social__item--tw">
+              <a href="#">
+                <span class="visually-hidden">twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-footer__developer developer">
+          <span class="developer__intro">Разработано</span>
+          <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Логотип академии</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <section class="modal-add-to-basket">
+      <div class="modal-add-to-basket__wrapper">
+        <form class="modal-add-to-basket__form" method="post" action="https://echo.htmlacademy.ru">
+          <h2 class="modal-add-to-basket__title">
+            Добавить в корзину
+          </h2>
+
+          <p class="modal-add-to-basket__intro">
+            Выберите размер:
+          </p>
+
+          <div class="modal-add-to-basket__subwrapper">
+            <input class="op-1 visually-hidden" type="radio" name="options" id="op-1" value="s" checked>
+            <label class="modal-add-to-basket__option" for="op-1">
+              S
+            </label>
+
+            <input class="op-2 visually-hidden" type="radio" name="options" id="op-2" value="m">
+            <label class="modal-add-to-basket__option" for="op-2">
+              M
+            </label>
+
+            <input class="op-3 visually-hidden" type="radio" name="options" id="op-3"
+            value="l">
+            <label class="modal-add-to-basket__option" for="op-3">
+              L
+            </label>
+          </div>
+
+          <button class="modal-add-to-basket__submit-button" type="submit">
+            Добавить
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
