@@ -40,7 +40,9 @@
     width: $tablet-width;
     padding: 13px 50px;
 
-    .page-intro__title {
+    .page-intro__title,
+    .page-catalog__title,
+    .page-form__title {
       font-size: 43px;
       line-height: 50px;
     }
@@ -69,7 +71,9 @@
     width: $desktop-width + 100px;
     padding: 14px 0;
 
-    .page-intro__title {
+    .page-intro__title,
+    .page-catalog__title,
+    .page-form__title {
       font-size: 53px;
       line-height: 57px;
     }

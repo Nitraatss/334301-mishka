@@ -1,5 +1,5 @@
 .catalog {
-  margin-bottom: 30px;
+  margin-bottom: 8px;
   padding-top: 30px;
 }
 
@@ -12,14 +12,30 @@
   @include container;
 }
 
+.catalog__product {
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .catalog {
     margin-bottom: 53px;
-    padding-top: 67px;
+    padding-top: 127px;
+  }
+
+  .catalog__product {
+    &:not(:last-of-type) {
+      margin-bottom: 50px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    margin-bottom: 3px;
+  }
+
   .catalog__wrapper {
     justify-content: space-between;
     align-items: flex-start;
