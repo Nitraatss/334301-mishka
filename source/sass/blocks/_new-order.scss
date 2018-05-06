@@ -11,7 +11,7 @@
   width: 100%;
   max-width: 100%;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 
   font-weight: 400;
   font-size: 13px;
@@ -48,8 +48,8 @@
 
 @media (min-width: $tablet-width) {
   .new-order {
-    margin-bottom: 50px;
-    padding-top: 61px;
+    margin-bottom: -18px;
+    padding-top: 71px;
   }
 
   .new-order__intro {
@@ -75,6 +75,14 @@
 
   .new-order__rules {
     margin: 0;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .new-order__submit-button {
+    max-width: 230px;
+    margin-top: 5px;
   }
 }
 
@@ -82,8 +90,9 @@
   .new-order__intro {
     width: 700px;
     margin: 0 auto;
-    margin-bottom: 66px;
+    margin-bottom: 70px;
     padding: 0;
+    padding-top: 50px;
   }
 
   .new-order__wrapper {
