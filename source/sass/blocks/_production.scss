@@ -34,18 +34,13 @@
   letter-spacing: 0;
   word-wrap: break-word;
 
-  &::before {
-    content: "";
+  & .production__camera-icon {
     position: absolute;
     top: 10px;
     left: 34px;
 
     width: 32px;
     height: 22px;
-
-    background-image: url("../img/icon-video.svg");
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 
@@ -68,6 +63,7 @@
   width: 101px;
   height: 77px;
 
+  background-color: transparent;
   background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -130,7 +126,7 @@
     border: 1px solid #ececec;
     border-bottom: none;
 
-    &::before {
+    & .production__camera-icon {
       top: 41px;
       left: 40px;
     }
@@ -184,7 +180,7 @@
 
     border: none;
 
-    &::before {
+    & .production__camera-icon {
       top: -51px;
       left: 0;
     }

@@ -17,6 +17,10 @@
     background-position: center;
     background-size: cover;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg");
+    }
+
     .page-intro__title {
       margin-top: 40px;
     }
@@ -50,6 +54,12 @@
     &--img {
       min-height: 746px;
 
+      background-image: url("../img/hero-tablet@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/hero-tablet@2x.jpg");
+      }
+
       .page-intro__title {
         margin-top: 140px;
       }
@@ -76,6 +86,16 @@
     .page-form__title {
       font-size: 53px;
       line-height: 57px;
+    }
+
+    &--img {
+      min-height: 746px;
+
+      background-image: url("../img/hero-desktop@1x.jpg");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/hero-desktop@2x.jpg");
+      }
     }
 
     &--no-img {

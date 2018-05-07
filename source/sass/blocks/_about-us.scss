@@ -37,7 +37,7 @@
     margin: 0;
   }
 
-  &::before {
+  & .about-us__icon {
     content: "";
     position: absolute;
     top: 0;
@@ -47,79 +47,67 @@
     background-position: center;
   }
 
-  &--eco::before {
+  &--eco .about-us__icon {
     top: 5px;
     left: 7px;
 
     width: 32px;
     height: 37px;
-
-    background-image: url("../img/icon-feature-flower.svg");
   }
 
   &--money {
     padding-top: 50px;
   }
 
-  &--money::before {
+  &--money .about-us__icon {
     width: 47px;
     height: 27px;
-
-    background-image: url("../img/icon-feature-money.svg");
   }
 
   &--like {
     padding-top: 49px;
   }
 
-  &--like::before {
+  &--like .about-us__icon {
     top: 3px;
     left: 6px;
 
     width: 34px;
     height: 27px;
-
-    background-image: url("../img/icon-feature-heart.svg");
   }
 
   &--tailor {
     padding-top: 52px;
   }
 
-  &--tailor::before {
+  &--tailor .about-us__icon {
     left: 3px;
 
     width: 35px;
     height: 34px;
-
-    background-image: url("../img/icon-feature-ball.svg");
   }
 
   &--rocket {
     padding-top: 50px;
   }
 
-  &--rocket::before {
+  &--rocket .about-us__icon {
     left: -5px;
 
     width: 55px;
     height: 23px;
-
-    background-image: url("../img/icon-feature-rocket.svg");
   }
 
   &--gift {
     padding-top: 50px;
   }
 
-  &--gift::before {
+  &--gift .about-us__icon {
     top: -2px;
     left: 3px;
 
     width: 33px;
     height: 32px;
-
-    background-image: url("../img/icon-feature-gift.svg");
   }
 }
 
@@ -163,7 +151,7 @@
       padding-top: 63px;
     }
 
-    &--tailor::before {
+    &--tailor .about-us__icon {
       top: 10px;
     }
 
@@ -180,7 +168,7 @@
       padding-top: 54px;
     }
 
-    &--rocket::before {
+    &--rocket .about-us__icon {
       top: 3px;
       left: -6px;
     }
@@ -198,7 +186,7 @@
       max-width: 290px;
     }
 
-    &--gift::before {
+    &--gift .about-us__icon {
       top: 0;
     }
   }
@@ -223,11 +211,11 @@
       margin-right: 120px;
     }
 
-    &--eco::before {
+    &--eco .about-us__icon {
       top: 10px;
     }
 
-    &--tailor::before {
+    &--tailor .about-us__icon {
       top: 14px;
     }
 

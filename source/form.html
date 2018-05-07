@@ -12,7 +12,11 @@
       <div class="main-header__wrapper">
         <nav class="main-header__nav main-nav">
           <a class="main-nav__logo" href="./index.html">
-            <img class="main-header__logo-img" src="./img/logo-mobile.svg" alt="Логотип сайта" width="86" height="35">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+              <img class="main-header__logo-img" src="./img/logo-mobile.svg" alt="логотип сайта">
+            </picture>
           </a>
 
           <button class="main-nav__toggle-button" type="button">
@@ -210,7 +214,7 @@
         <div class="main-footer__developer developer">
           <span class="developer__intro">Разработано</span>
           <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">Логотип академии</span>
+            <img class="developer__icon" src="./img/htmlacademy.svg" alt="Логотип академии" width="27" height="34">
           </a>
         </div>
       </div>
