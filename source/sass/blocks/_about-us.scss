@@ -1,5 +1,5 @@
 .about-us {
-  margin-bottom: 60px;
+  margin-bottom: 57px;
   padding-top: 33px;
 
   border-top: 1px solid black;
@@ -22,7 +22,6 @@
   font-size: 17px;
   line-height: 20px;
   color: #000000;
-  letter-spacing: 0;
 }
 
 .about-us__feature {
@@ -30,7 +29,7 @@
 
   max-width: 100%;
   margin-bottom: 33px;
-  padding-top: 58px;
+  padding-top: 57px;
 
   word-wrap: break-word;
 
@@ -42,17 +41,24 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 8px;
+    left: 0;
 
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--eco::before {
+    top: 5px;
+    left: 7px;
+
     width: 32px;
     height: 37px;
 
     background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--money {
+    padding-top: 50px;
   }
 
   &--money::before {
@@ -62,28 +68,54 @@
     background-image: url("../img/icon-feature-money.svg");
   }
 
+  &--like {
+    padding-top: 49px;
+  }
+
   &--like::before {
+    top: 3px;
+    left: 6px;
+
     width: 34px;
     height: 27px;
 
     background-image: url("../img/icon-feature-heart.svg");
   }
 
+  &--tailor {
+    padding-top: 52px;
+  }
+
   &--tailor::before {
+    left: 3px;
+
     width: 35px;
     height: 34px;
 
     background-image: url("../img/icon-feature-ball.svg");
   }
 
+  &--rocket {
+    padding-top: 50px;
+  }
+
   &--rocket::before {
+    left: -5px;
+
     width: 55px;
     height: 23px;
 
     background-image: url("../img/icon-feature-rocket.svg");
   }
 
+  &--gift {
+    padding-top: 50px;
+  }
+
   &--gift::before {
+    top: -2px;
+    left: 3px;
+
     width: 33px;
     height: 32px;
 
@@ -104,7 +136,7 @@
   .about-us__features-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
   }
 
@@ -121,35 +153,53 @@
     &--eco {
       order: 1;
       max-width: 230px;
-      margin-right: 99px;
+      margin-right: 105px;
+      padding-top: 63px;
     }
 
     &--tailor {
       order: 2;
       max-width: 290px;
+      padding-top: 63px;
+    }
+
+    &--tailor::before {
+      top: 10px;
     }
 
     &--money {
       order: 3;
       max-width: 240px;
-      margin-right: 99px;
+      margin-right: 95px;
+      padding-top: 54px;
     }
 
     &--rocket {
       order: 4;
       max-width: 310px;
+      padding-top: 54px;
+    }
+
+    &--rocket::before {
+      top: 3px;
+      left: -6px;
     }
 
     &--like {
       order: 5;
       max-width: 240px;
-      margin-right: 99px;
+      margin-right: 95px;
       margin-bottom: 0;
+      padding-top: 50px;
     }
 
     &--gift {
       order: 6;
       max-width: 290px;
+    }
+
+    &--gift::before {
+      top: 0;
     }
   }
 }
@@ -157,7 +207,7 @@
 @media (min-width: $desktop-width) {
   .about-us {
     margin-bottom: 90px;
-    padding-top: 90px;
+    padding-top: 70px;
   }
 
   .about-us__wrapper {
@@ -166,5 +216,27 @@
 
   .about-us__features-list {
     width: 700px;
+  }
+
+  .about-us__feature {
+    &--eco {
+      margin-right: 120px;
+    }
+
+    &--eco::before {
+      top: 10px;
+    }
+
+    &--tailor::before {
+      top: 14px;
+    }
+
+    &--money {
+      margin-right: 110px;
+    }
+
+    &--like {
+      margin-right: 110px;
+    }
   }
 }

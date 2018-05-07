@@ -6,10 +6,6 @@
   width: 100%;
 
   border: 1px solid #ececec;
-
-  &:not(:last-of-type) {
-    margin-bottom: 30px;
-  }
 }
 
 .product__description {
@@ -125,7 +121,8 @@
     align-items: flex-start;
     align-self: stretch;
     width: 334px;
-    padding: 25px 33px;
+    padding: 25px 29px;
+    padding-bottom: 30px;
   }
 
   .product__title {
@@ -149,8 +146,13 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 316px;
-  }
 
+    &:not(:last-of-type) {
+      .product__info {
+        margin-bottom: 41px;
+      }
+    }
+  }
 
   .product__image {
     width: 100%;

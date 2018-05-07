@@ -11,6 +11,11 @@
 
   border: none;
 
+  input,
+  textarea {
+    outline: none;
+  }
+
   &--type {
     padding-bottom: 45px;
 
@@ -31,9 +36,29 @@
     padding-bottom: 34px;
 
     .setting__title {
-      margin-bottom: 27px;
+      margin-bottom: 20px;
     }
   }
+
+  &--type,
+  &--colors,
+  &--user {
+    .setting__title {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 63px;
+
+        width: 196px;
+        height: 1px;
+
+        background-color: $site-color;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
 
   &--phone,
   &--email {
@@ -45,9 +70,37 @@
     }
   }
 
+  &--phone {
+    .setting__title {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 82px;
+
+        width: 178px;
+        height: 1px;
+
+        background-color: $site-color;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
   &--email {
-    .setting__title::after {
-      width: 179px;
+    .setting__title {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 82px;
+
+        width: 178px;
+        height: 1px;
+
+        background-color: $site-color;
+        transform: translateY(-50%);
+      }
     }
   }
 
@@ -57,6 +110,19 @@
 
     .setting__title {
       margin-bottom: 22px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 64px;
+
+        width: 196px;
+        height: 1px;
+
+        background-color: $site-color;
+        transform: translateY(-50%);
+      }
     }
   }
 }
@@ -69,19 +135,6 @@
 
   color: $site-color;
   text-transform: uppercase;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 100%;
-
-    width: 198px;
-    height: 1px;
-
-    background-color: $site-color;
-    transform: translateY(-50%);
-  }
 }
 
 .setting__wrapper {
@@ -105,8 +158,12 @@
   width: 100%;
   padding-left: 62px;
 
-  &:not(:last-of-type) {
-    margin-bottom: 45px;
+  &--radio:not(:last-of-type) {
+    margin-bottom: 25px;
+  }
+
+  &--checkebox:not(:last-of-type) {
+    margin-bottom: 43px;
   }
 
   &::before {
@@ -132,11 +189,6 @@
     border-radius: 50%;
   }
 
-  &--radio-checked::before {
-    background-color: $site-color;
-    box-shadow: inset 0 0 0 10px white;
-  }
-
   &--checkebox::before {
     width: 40px;
     height: 39px;
@@ -147,10 +199,21 @@
     background-size: 22px 16px;
     border: 2px solid $grey-color;
   }
+}
 
-  &--checkebox-checked::before {
-    background-image: url("../img/icon-tick.svg");
-  }
+.type-1:checked ~ label[for="type-1"]::before,
+.type-2:checked ~ label[for="type-2"]::before {
+  background-color: $site-color;
+  box-shadow: inset 0 0 0 10px white;
+}
+
+.color-1:checked ~ label[for="color-1"]::before,
+.color-2:checked ~ label[for="color-2"]::before,
+.color-3:checked ~ label[for="color-3"]::before,
+.color-4:checked ~ label[for="color-4"]::before,
+.color-5:checked ~ label[for="color-5"]::before,
+.color-6:checked ~ label[for="color-6"]::before {
+  background-image: url("../img/icon-tick.svg");
 }
 
 .setting__label:not(:last-of-type) {
@@ -188,6 +251,7 @@
 
 .setting__textarea {
   width: 100%;
+  height: 140px;
   padding: 17px;
 
   font-weight: 400;
@@ -224,7 +288,7 @@
     padding: 0;
 
     &--type {
-      margin-bottom: 65px;
+      margin-bottom: 70px;
       padding: 0 50px;
 
       .setting__title {
@@ -258,7 +322,7 @@
 
     &--user {
       padding: 50px 50px;
-      padding-top: 69px;
+      padding-top: 50px;
 
       .setting__title {
         padding-top: 17px;
@@ -318,6 +382,44 @@
   .setting__value {
     font-size: 19px;
     line-height: 19px;
+
+    &--radio {
+      padding-left: 80px;
+    }
+
+    &--radio::before {
+      width: 50px;
+      height: 50px;
+
+      background-color: white;
+      border: 2px solid $grey-color;
+      border-radius: 50%;
+    }
+
+    &--checkebox {
+      padding-left: 80px;
+    }
+
+    &--checkebox:not(:last-of-type) {
+      margin-bottom: 60px;
+    }
+
+    &--checkebox::before {
+      width: 52px;
+      height: 52px;
+
+      background-color: white;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 33px 32px;
+      border: 2px solid $grey-color;
+    }
+  }
+
+  .type-1:checked ~ label[for="type-1"]::before,
+  .type-2:checked ~ label[for="type-2"]::before {
+    background-color: $site-color;
+    box-shadow: inset 0 0 0 13px white;
   }
 }
 
@@ -330,9 +432,20 @@
   }
 
   .setting {
+    &--type {
+      .setting__title {
+        top: 5px;
+        left: -5px;
+      }
+    }
+
     &--user {
       .setting__label {
         width: 700px;
+      }
+
+      .setting__title {
+        left: 5px;
       }
     }
 
@@ -353,6 +466,11 @@
           margin-bottom: 0;
         }
       }
+
+      .setting__title {
+        top: 3px;
+        left: 5px;
+      }
     }
 
     &--phone,
@@ -362,11 +480,31 @@
       }
     }
 
+    &--phone {
+      padding-top: 52px;
+
+      .setting__title {
+        left: 5px;
+      }
+    }
+
     &--email {
       padding-top: 24px;
+
+      .setting__title {
+        top: 6px;
+        left: 13px;
+      }
     }
 
     &--textarea {
+      padding-bottom: 45px;
+
+      .setting__title {
+        top: 2px;
+        left: 8px;
+      }
+
       .setting__textarea {
         width: 700px;
       }

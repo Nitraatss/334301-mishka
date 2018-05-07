@@ -66,8 +66,15 @@
   border: 2px solid $grey-color;
 
   &--checked {
+    background: red;
     border: 2px solid $site-color;
   }
+}
+
+.op-1:checked ~ label[for="op-1"],
+.op-2:checked ~ label[for="op-2"],
+.op-3:checked ~ label[for="op-3"] {
+  border: 2px solid $site-color;
 }
 
 .modal-add-to-basket__submit-button {

@@ -123,7 +123,7 @@
             <div class="product__wrapper">
               <div class="product__description">
                 <h3 class="product__title">
-                  <a href="#">Большая корзина для игрушек</a>
+                  <a href="#">Большая корзина<br>для игрушек</a>
                 </h3>
                 <p class="product__info">Большая корзина для игрушек</p>
               </div>
@@ -213,17 +213,19 @@
           </p>
 
           <div class="modal-add-to-basket__subwrapper">
-            <label class="modal-add-to-basket__option modal-add-to-basket__option--checked" for="op-1">
-              <input class="visually-hidden" type="radio" name="options" id="op-1" value="s" checked>
+            <input class="op-1 visually-hidden" type="radio" name="options" id="op-1" value="s" checked>
+            <label class="modal-add-to-basket__option" for="op-1">
               S
             </label>
+
+            <input class="op-2 visually-hidden" type="radio" name="options" id="op-2" value="m">
             <label class="modal-add-to-basket__option" for="op-2">
-              <input class="visually-hidden" type="radio" name="options" id="op-2" value="m">
               M
             </label>
+
+            <input class="op-3 visually-hidden" type="radio" name="options" id="op-3"
+            value="l">
             <label class="modal-add-to-basket__option" for="op-3">
-              <input class="visually-hidden" type="radio" name="options" id="op-3"
-              value="l">
               L
             </label>
           </div>

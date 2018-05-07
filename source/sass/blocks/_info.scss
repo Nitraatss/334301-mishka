@@ -21,7 +21,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   &:last-of-type {
     margin: 0;
@@ -38,8 +38,6 @@
 .info__text {
   display: inline-block;
   margin: 0;
-
-  font-style: italic;
 
   &--email {
     border-bottom: 1px solid $site-color;

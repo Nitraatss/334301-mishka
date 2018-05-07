@@ -5,7 +5,7 @@
 .review__text {
   max-width: 100%;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 27px;
 
   font-weight: 400;
   font-size: $main-font-size;
@@ -32,16 +32,23 @@
   }
 
   .review__text {
-    margin-bottom: 65px;
+    margin-bottom: 58px;
 
     font-size: 17px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .review__text {
+    width: 100%;
+    max-width: 780px;
+    margin-bottom: 40px;
+    margin-left: 175px;
+  }
+
   .review::before {
     top: -176px;
-    left: -50px;
+    left: 0;
     z-index: -1;
   }
 }
