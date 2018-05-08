@@ -294,6 +294,8 @@
 
   &:hover + .setting__icon,
   &:focus + .setting__icon {
+    opacity: 1;
+
     fill: $site-color;
   }
 
@@ -304,7 +306,7 @@
   &--phone {
     position: relative;
 
-    padding-right: 33px;
+    padding-right: 63px;
   }
 
   &--email {
@@ -354,17 +356,10 @@
 }
 
 .setting__icon {
-  right: 60px;
+  top: 32px;
+  right: 5px;
 
   transition: 0.3s ease-in-out;
-
-  &--phone {
-    top: 65px;
-  }
-
-  &--mail {
-    top: 35px;
-  }
 }
 
 @media (min-width: $tablet-width) {
