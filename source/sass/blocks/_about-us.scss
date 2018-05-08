@@ -121,12 +121,13 @@
 @media (min-width: $tablet-width) {
   .about-us {
     margin-bottom: 83px;
-    padding-top: 55px;
+    padding-top: 0;
   }
 
   .about-us__wrapper {
+    padding-top: 70px;
     &::before {
-      top: -55px;
+      top: 0;
     }
   }
 
@@ -208,14 +209,14 @@
 @media (min-width: $desktop-width) {
   .about-us {
     margin-bottom: 90px;
-    padding-top: 70px;
   }
 
   .about-us__wrapper {
+    padding-top: 70px;
     padding-left: 225px;
 
     &::before {
-      top: -70px;
+      top: 0;
     }
   }
 

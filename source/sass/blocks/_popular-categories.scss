@@ -1,5 +1,5 @@
 .popular-categories {
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 
   color: white;
   letter-spacing: 0;
@@ -32,7 +32,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  min-height: 105px;
+  min-height: 103px;
   padding: 0 30px;
 }
 
@@ -98,7 +98,7 @@
 @media (min-width: $tablet-width) {
   .popular-categories {
     margin-top: -119px;
-    margin-bottom: 46px;
+    margin-bottom: 32px;
   }
 
   .popular-categories__wrapper {
@@ -106,6 +106,7 @@
 
     width: 768px;
     padding: 0 50px;
+    padding-bottom: 16px;
 
     &::before {
       content: "";
@@ -159,12 +160,13 @@
 
 @media (min-width: $desktop-width) {
   .popular-categories {
-    margin-bottom: 123px;
+    margin-bottom: 108px;
   }
 
   .popular-categories__wrapper {
     width: 1150px;
     padding: 0 50px;
+    padding-bottom: 16px;
 
     &::before {
       width: $desktop-width;

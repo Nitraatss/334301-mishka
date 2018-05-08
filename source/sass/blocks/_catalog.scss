@@ -20,8 +20,8 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    margin-bottom: 53px;
-    padding-top: 127px;
+    margin-bottom: 30px;
+    padding-top: 82px;
   }
 
   .catalog__product {
@@ -33,11 +33,18 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    margin-bottom: 3px;
+    margin-bottom: 0;
+    padding-top: 125px;
   }
 
   .catalog__wrapper {
     justify-content: space-between;
     align-items: flex-start;
+  }
+
+  .catalog__product {
+    &:not(:last-of-type) {
+      margin-bottom: 30px;
+    }
   }
 }

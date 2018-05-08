@@ -1,5 +1,5 @@
 .production {
-  margin-bottom: 58px;
+  margin-bottom: 60px;
   padding-top: 48px;
 }
 
@@ -10,6 +10,7 @@
   align-items: flex-start;
   width: 260px;
   margin: 0 auto;
+  padding-bottom: 27px;
 
   background: #ffffff;
   border: 1px solid #ececec;
@@ -49,8 +50,8 @@
   top: 10px;
   left: 34px;
 
-  width: 32px;
-  height: 22px;
+  width: 42px;
+  height: 32px;
 
   fill: $site-color;
 }
@@ -116,7 +117,7 @@
 
 @media (min-width: $tablet-width) {
   .production {
-    margin-bottom: 63px;
+    margin-bottom: 25px;
     padding-top: 23px;
   }
 
@@ -151,8 +152,8 @@
   }
 
   .production__camera-icon {
-    top: 41px;
-    left: 40px;
+    top: 33px;
+    left: 35px;
   }
 
   .production__order {
@@ -180,7 +181,7 @@
 
 @media (min-width: $desktop-width) {
   .production {
-    margin-bottom: 104px;
+    margin-bottom: 70px;
   }
 
   .production__wrapper {
@@ -193,8 +194,8 @@
 
   .production__intro {
     position: absolute;
-    top: 98px;
-    left: 811px;
+    top: 91px;
+    left: 758px;
     z-index: 3;
 
     max-width: 178px;
