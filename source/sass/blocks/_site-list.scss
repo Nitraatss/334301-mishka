@@ -1,4 +1,5 @@
 .site-list {
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -14,6 +15,10 @@
   &:last-of-type {
     display: none;
   }
+}
+
+.site-list--hidden {
+  display: none;
 }
 
 .site-list__item {
