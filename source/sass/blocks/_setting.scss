@@ -36,7 +36,7 @@
     padding-bottom: 34px;
 
     .setting__title {
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
   }
 
@@ -56,12 +56,6 @@
         background-color: $site-color;
         transform: translateY(-50%);
       }
-    }
-  }
-
-  &--user {
-    .setting__title {
-      margin-bottom: 24px;
     }
   }
 
@@ -136,8 +130,12 @@
 
 .setting__icon {
   position: absolute;
+  top: 32px;
+  right: 5px;
 
   opacity: 0.2;
+
+  transition: 0.3s ease-in-out;
 
   fill: $grey-color;
 
@@ -184,23 +182,21 @@
 }
 
 .setting__value {
-  &:hover::before,
-  &:focus::before {
-    border: 2px solid $site-color;
-  }
-
-  &:active::before {
-    border: 2px solid rgba(68,68,68,0.3);
-  }
-}
-
-.setting__value {
   position: relative;
 
   width: 100%;
   padding-left: 62px;
 
   outline: none;
+
+  &:hover::before,
+  &:focus::before {
+    border: 2px solid $site-color;
+  }
+
+  &:active::before {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
 
 
   &--radio:not(:last-of-type) {
@@ -353,13 +349,6 @@
 .setting__text-input::placeholder,
 .setting__textarea::placeholder {
   color: rgba(68, 68, 68, 0.3);
-}
-
-.setting__icon {
-  top: 32px;
-  right: 5px;
-
-  transition: 0.3s ease-in-out;
 }
 
 @media (min-width: $tablet-width) {
