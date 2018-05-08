@@ -1,6 +1,7 @@
 .main-footer {
-  width: 100%;
+  width: 320px;
   min-width: inherit;
+  margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 25px;
 
@@ -29,6 +30,7 @@
 
 @media (min-width: $tablet-width) {
   .main-footer {
+    width: $tablet-width;
     padding: 57px 0;
   }
 
@@ -46,5 +48,12 @@
   .main-footer__logo-img {
     width: 100%;
     height: inherit;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    width: $desktop-width;
   }
 }
