@@ -36,6 +36,21 @@
   padding: 0 30px;
 }
 
+.popular-categories__link:hover,
+.popular-categories__link:focus {
+  outline: none;
+
+  .popular-categories__title::after {
+    opacity: 0.7;
+  }
+}
+
+.popular-categories__link:active {
+  .popular-categories__title::after {
+    opacity: 0.3;
+  }
+}
+
 .popular-categories__title {
   width: 100%;
   max-width: 145px;
@@ -54,6 +69,9 @@
 
     background-repeat: no-repeat;
     background-position: center;
+    opacity: 0.5;
+
+    transition: 0.3s ease-in-out;
   }
 
   &--interior::after {

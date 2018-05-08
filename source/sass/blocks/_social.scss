@@ -22,6 +22,17 @@
   position: relative;
 
   display: block;
+
+  outline: none;
+
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: $site-color;
+  }
+
+  &:active .social__icon {
+    opacity: 0.3;
+  }
 }
 
 .social__item--inst a {
@@ -50,6 +61,11 @@
 
   background-repeat: no-repeat;
   background-position: center;
+  outline: none;
+
+  transition: 0.3s ease-in-out;
+
+  fill: #221f1f;
 
   &--inst {
     width: 22px;

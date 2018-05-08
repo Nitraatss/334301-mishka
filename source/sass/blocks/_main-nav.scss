@@ -11,12 +11,28 @@
 
 .main-nav__logo {
   display: block;
-  height: 79px;
   padding: 22px 0;
 
-  img {
-    margin: 0 auto;
+  transition: 0.3s ease-in-out;
+}
+
+.main-nav__logo[href] {
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
   }
+
+  &:active {
+    outline: none;
+    opacity: 0.3;
+  }
+}
+
+.main-nav__logo-img {
+  width: 86px;
+  height: 35px;
+  margin: 0 auto;
 }
 
 .main-nav__toggle-button {
@@ -29,8 +45,9 @@
   padding: 0;
 
   border: none;
+  outline: none;
 
-  &::before {
+  &--open::before {
     content: "";
     position: absolute;
     top: 0;
@@ -40,6 +57,20 @@
     height: 21px;
 
     background-image: url("../img/icon-menu-open.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--close::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 21px;
+
+    background-image: url("../img/icon-menu-close.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -66,8 +97,14 @@
     display: none;
   }
 
-  .main-header__logo {
+  .main-nav__logo {
     order: 1;
+    padding: 0;
+  }
+
+  .main-nav__logo-img {
+    width: 113px;
+    height: 46px;
   }
 
   .main-nav__list {
@@ -101,7 +138,11 @@
   .main-nav__logo {
     order: 1;
     margin: 0 auto;
-    padding: 0;
+  }
+
+  .main-nav__logo-img {
+    width: 149px;
+    height: 72px;
   }
 
   .main-nav__list {

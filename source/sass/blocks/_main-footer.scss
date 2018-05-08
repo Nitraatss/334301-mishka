@@ -26,6 +26,23 @@
 
 .main-footer__logo {
   display: none;
+
+  outline: none;
+}
+
+.main-footer__logo-img {
+  transition: 0.3s ease-in-out;
+}
+
+.main-footer__logo[href] {
+  &:hover .main-footer__logo-img,
+  &:focus .main-footer__logo-img {
+    fill: $site-color;
+  }
+
+  &:active .main-footer__logo-img {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

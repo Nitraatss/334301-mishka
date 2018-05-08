@@ -12,6 +12,17 @@
   width: 27px;
   height: 34px;
   margin-left: 29px;
+
+  outline: none;
+
+  &:hover .developer__icon,
+  &:focus .developer__icon {
+    fill: $site-color;
+  }
+
+  &:active .developer__icon {
+    opacity: 0.3;
+  }
 }
 
 .developer__icon {
@@ -22,5 +33,7 @@
   width: 27px;
   height: 34px;
 
-  fill: $site-color;
+  transition: 0.3s ease-in-out;
+
+  fill: #63d1bb;
 }

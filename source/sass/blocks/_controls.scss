@@ -31,6 +31,19 @@
   background-position: center;
   border: 1px solid #ececec;
 
+  transition: 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.3;
+  }
+
   &--next {
     background-image: url("../img/icon-right-arrow.svg");
     border-left: none;
