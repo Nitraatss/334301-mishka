@@ -12,13 +12,15 @@
   width: 27px;
   height: 34px;
   margin-left: 29px;
+}
 
-  & .developer__icon {
-    position: absolute;
-    top: 0;
-    left: 0;
+.developer__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    width: 27px;
-    height: 34px;
-  }
+  width: 27px;
+  height: 34px;
+
+  fill: $site-color;
 }

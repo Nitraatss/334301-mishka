@@ -33,15 +33,17 @@
   color: #000000;
   letter-spacing: 0;
   word-wrap: break-word;
+}
 
-  & .production__camera-icon {
-    position: absolute;
-    top: 10px;
-    left: 34px;
+.production__camera-icon {
+  position: absolute;
+  top: 10px;
+  left: 34px;
 
-    width: 32px;
-    height: 22px;
-  }
+  width: 32px;
+  height: 22px;
+
+  fill: $site-color;
 }
 
 .production__subwrapper {
@@ -125,11 +127,11 @@
 
     border: 1px solid #ececec;
     border-bottom: none;
+  }
 
-    & .production__camera-icon {
-      top: 41px;
-      left: 40px;
-    }
+  .production__camera-icon {
+    top: 41px;
+    left: 40px;
   }
 
   .production__order {
@@ -179,11 +181,11 @@
     padding: 0;
 
     border: none;
+  }
 
-    & .production__camera-icon {
-      top: -51px;
-      left: 0;
-    }
+  .production__camera-icon {
+    top: -51px;
+    left: 0;
   }
 
   .production__subwrapper {

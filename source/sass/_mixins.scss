@@ -13,3 +13,35 @@
     padding: 0 50px;
   }
 }
+
+@mixin zigzag {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    width: 320px;
+    height: 6px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 6px;
+
+    @media (min-width: $tablet-width) {
+      width: $tablet-width;
+      height: 17px;
+
+      background-size: 100% 17px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: $desktop-width;
+      height: 23px;
+
+      background-size: 100% 23px;
+    }
+  }
+}

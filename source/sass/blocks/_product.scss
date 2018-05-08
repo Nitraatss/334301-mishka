@@ -85,21 +85,19 @@
 
   background-color: transparent;
   border: none;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 20px;
-    height: 19px;
-
-    background-image: url("../img/icon-cart.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 }
+
+.product__basket-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 19px;
+
+  fill: #d3d2d2;
+}
+
 
 @media (min-width: $tablet-width) {
   .product {

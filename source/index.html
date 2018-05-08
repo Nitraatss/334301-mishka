@@ -40,11 +40,17 @@
             <li class="site-list__item site-list__item--search">
               <a href="#">
                 Поиск по сайту
+                <svg class="site-list__search-icon" width="18" height="18">
+                  <use xlink:href="./img/sprite.svg#icon-search"></use>
+                </svg>
               </a>
             </li>
             <li class="site-list__item site-list__item--basket">
               <a href="#">
                 Корзина: пока пуста
+                <svg class="site-list__cart-icon" width="18" height="18">
+                  <use xlink:href="./img/sprite.svg#icon-cart"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -153,27 +159,39 @@
           <ul class="about-us__features-list">
             <li class="about-us__feature about-us__feature--eco">
               Экологически<br>чистые материалы
-              <img class="about-us__icon" src="./img/icon-feature-flower.svg" alt="иконка экологии">
+              <svg class="about-us__icon" width="40" height="40" aria-hidden="true" role="presentation">
+                <use xlink:href="./img/sprite.svg#icon-feature-flower"></use>
+              </svg>
             </li>
             <li class="about-us__feature about-us__feature--money">
               Скандинавский стиль<br>по российской цене
-              <img class="about-us__icon" src="./img/icon-feature-money.svg" alt="иконка денег">
+              <svg class="about-us__icon" width="40" height="40" aria-hidden="true" role="presentation">
+                <use xlink:href="./img/sprite.svg#icon-feature-money"></use>
+              </svg>
             </li>
             <li class="about-us__feature about-us__feature--like">
               Увеличивает лайки<br>на фотографиях
-              <img class="about-us__icon" src="./img/icon-feature-heart.svg" alt="иконка лайка">
+              <svg class="about-us__icon" width="40" height="40" aria-hidden="true" role="presentation">
+                <use xlink:href="./img/sprite.svg#icon-feature-heart"></use>
+              </svg>
             </li>
             <li class="about-us__feature about-us__feature--tailor">
               Связано вручную с<br>любовью и умилением
-              <img class="about-us__icon" src="./img/icon-feature-ball.svg" alt="иконка клубка">
+              <svg class="about-us__icon" width="40" height="40" aria-hidden="true" role="presentation">
+                <use xlink:href="./img/sprite.svg#icon-feature-ball"></use>
+              </svg>
             </li>
             <li class="about-us__feature about-us__feature--rocket">
               Поддержка отечественного производителя
-              <img class="about-us__icon" src="./img/icon-feature-rocket.svg" alt="иконка ракеты">
+              <svg class="about-us__icon" width="40" height="40" aria-hidden="true" role="presentation">
+                <use xlink:href="./img/sprite.svg#icon-feature-rocket"></use>
+              </svg>
             </li>
             <li class="about-us__feature about-us__feature--gift">
               Поставляется в<br>подарочной упаковке
-              <img class="about-us__icon" src="./img/icon-feature-gift.svg" alt="иконка подарка">
+              <svg class="about-us__icon" width="40" height="40" aria-hidden="true" role="presentation">
+                <use xlink:href="./img/sprite.svg#icon-feature-gift"></use>
+              </svg>
             </li>
           </ul>
         </div>
@@ -216,7 +234,11 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <div class="contacts__subwrapper">
-            <h2 class="contacts__intro">Контакты</h2>
+            <h2 class="contacts__intro">
+              Контакты
+
+              <img class="contacts__flag-icon" src="./img/icon-flag.svg" width="47" height="81" alt="флаг">
+            </h2>
 
             <section class="contacts__info info">
               <h2 class="visually-hidden">Наш email и адрес</h2>
@@ -266,17 +288,26 @@
           <ul class="social__list">
             <li class="social__item social__item--inst">
               <a href="#">
-                <span class="visually-hidden">instagramm</span>
+                <svg class="social__icon social__icon--inst" width="22" height="21" aria-labelledby="instagramm-heading">
+                  <title id="instagramm-heading">Instagramm</title>
+                  <use xlink:href="./img/sprite.svg#icon-insta"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item social__item--fb">
               <a href="#">
-                <span class="visually-hidden">facebook</span>
+                <svg class="social__icon social__icon--fb" width="15" height="28" aria-labelledby="facebook-heading">
+                  <title id="facebook-heading">Facebook</title>
+                  <use xlink:href="./img/sprite.svg#icon-fb"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item social__item--tw">
               <a href="#">
-                <span class="visually-hidden">twitter</span>
+                <svg class="social__icon social__icon--tw" width="23" height="20" aria-labelledby="twitter-heading">
+                  <title id="twitter-heading">Twitter</title>
+                  <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -285,7 +316,10 @@
         <div class="main-footer__developer developer">
           <span class="developer__intro">Разработано</span>
           <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="developer__icon" src="./img/htmlacademy.svg" alt="Логотип академии" width="27" height="34">
+            <svg class="developer__icon" width="27" height="34" aria-labelledby="developer-heading" role="img">
+              <title id="developer-heading">Логотип академии</title>
+              <use xlink:href="./img/sprite.svg#htmlacademy-logo"></use>
+            </svg>
           </a>
         </div>
       </div>

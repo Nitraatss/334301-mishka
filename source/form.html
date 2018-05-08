@@ -40,11 +40,17 @@
             <li class="site-list__item site-list__item--search">
               <a href="#">
                 Поиск по сайту
+                <svg class="site-list__search-icon" width="18" height="18">
+                  <use xlink:href="./img/sprite.svg#icon-search"></use>
+                </svg>
               </a>
             </li>
             <li class="site-list__item site-list__item--basket">
               <a href="#">
                 Корзина: пока пуста
+                <svg class="site-list__cart-icon" width="18" height="18">
+                  <use xlink:href="./img/sprite.svg#icon-cart"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -158,12 +164,20 @@
               <span class="setting__title">Тел</span>
 
               <input class="setting__text-input setting__text-input--phone" type="tel" name="Phone" pattern="(\+?\d[- .]*){7,13}" placeholder="+7 ХХХ ХХ ХХ*" required>
+
+              <svg class="setting__icon setting__icon--phone" width="25" height="24" aria-hidden="true" role="presentation">
+                <use xlink:href="./img/sprite.svg#icon-phone"></use>
+              </svg>
             </div>
 
             <div class="new-order__setting setting setting--email">
               <span class="setting__title">E-MAIL</span>
 
               <input class="setting__text-input setting__text-input--email" type="email" name="E-mail" placeholder="Ваш Email*" required>
+
+              <svg class="setting__icon setting__icon--mail" width="32" height="21" aria-hidden="true" role="presentation">
+                <use xlink:href="./img/sprite.svg#icon-mail"></use>
+              </svg>
             </div>
 
             <div class="new-order__setting setting setting--textarea">
@@ -195,17 +209,26 @@
           <ul class="social__list">
             <li class="social__item social__item--inst">
               <a href="#">
-                <span class="visually-hidden">instagramm</span>
+                <svg class="social__icon social__icon--inst" width="22" height="21" aria-labelledby="instagramm-heading">
+                  <title id="instagramm-heading">Instagramm</title>
+                  <use xlink:href="./img/sprite.svg#icon-insta"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item social__item--fb">
               <a href="#">
-                <span class="visually-hidden">facebook</span>
+                <svg class="social__icon social__icon--fb" width="15" height="28" aria-labelledby="facebook-heading">
+                  <title id="facebook-heading">Facebook</title>
+                  <use xlink:href="./img/sprite.svg#icon-fb"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item social__item--tw">
               <a href="#">
-                <span class="visually-hidden">twitter</span>
+                <svg class="social__icon social__icon--tw" width="23" height="20" aria-labelledby="twitter-heading">
+                  <title id="twitter-heading">Twitter</title>
+                  <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -214,7 +237,10 @@
         <div class="main-footer__developer developer">
           <span class="developer__intro">Разработано</span>
           <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="developer__icon" src="./img/htmlacademy.svg" alt="Логотип академии" width="27" height="34">
+            <svg class="developer__icon" width="27" height="34" aria-labelledby="developer-heading" role="img">
+              <title id="developer-heading">Логотип академии</title>
+              <use xlink:href="./img/sprite.svg#htmlacademy-logo"></use>
+            </svg>
           </a>
         </div>
       </div>

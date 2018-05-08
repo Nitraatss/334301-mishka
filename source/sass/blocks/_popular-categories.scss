@@ -84,8 +84,25 @@
   }
 
   .popular-categories__wrapper {
+    position: relative;
+
     width: 768px;
     padding: 0 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: $tablet-width;
+      height: 24px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 24px;
+    }
   }
 
   .popular-categories__list {
@@ -130,6 +147,13 @@
   .popular-categories__wrapper {
     width: 1150px;
     padding: 0 50px;
+
+    &::before {
+      width: $desktop-width;
+      height: 34px;
+
+      background-size: 100% 34px;
+    }
   }
 
   .popular-categories__title {

@@ -43,8 +43,7 @@
 .site-list__item--search {
   position: relative;
 
-  & a::before {
-    content: "";
+  & .site-list__search-icon {
     position: absolute;
     top: 50%;
     left: 32px;
@@ -52,16 +51,16 @@
     width: 18px;
     height: 18px;
 
-    background-image: url("../img/icon-search.svg");
     transform: translateY(-50%);
+
+    fill: #d3d2d2;
   }
 }
 
 .site-list__item--basket {
   position: relative;
 
-  & a::before {
-    content: "";
+  & .site-list__cart-icon {
     position: absolute;
     top: 50%;
     left: 32px;
@@ -69,8 +68,9 @@
     width: 21px;
     height: 18px;
 
-    background-image: url("../img/icon-cart.svg");
     transform: translateY(-50%);
+
+    fill: #d3d2d2;
   }
 }
 

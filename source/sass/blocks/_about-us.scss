@@ -1,12 +1,17 @@
 .about-us {
   margin-bottom: 57px;
   padding-top: 33px;
-
-  border-top: 1px solid black;
 }
 
 .about-us__wrapper {
+  position: relative;
+
   @include container;
+  @include zigzag;
+
+  &::before {
+    top: -33px;
+  }
 }
 
 .about-us__intro {
@@ -45,6 +50,8 @@
 
     background-repeat: no-repeat;
     background-position: center;
+
+    fill: $site-color;
   }
 
   &--eco .about-us__icon {
@@ -115,6 +122,12 @@
   .about-us {
     margin-bottom: 83px;
     padding-top: 55px;
+  }
+
+  .about-us__wrapper {
+    &::before {
+      top: -55px;
+    }
   }
 
   .about-us__intro {
@@ -200,6 +213,10 @@
 
   .about-us__wrapper {
     padding-left: 225px;
+
+    &::before {
+      top: -70px;
+    }
   }
 
   .about-us__features-list {
