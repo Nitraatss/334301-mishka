@@ -43,32 +43,34 @@
 .site-list__item--search {
   position: relative;
 
-  &::before {
+  & a::before {
     content: "";
     position: absolute;
-    top: 32px;
+    top: 50%;
     left: 32px;
 
     width: 18px;
     height: 18px;
 
     background-image: url("../img/icon-search.svg");
+    transform: translateY(-50%);
   }
 }
 
 .site-list__item--basket {
   position: relative;
 
-  &::before {
+  & a::before {
     content: "";
     position: absolute;
-    top: 32px;
+    top: 50%;
     left: 32px;
 
     width: 21px;
     height: 18px;
 
     background-image: url("../img/icon-cart.svg");
+    transform: translateY(-50%);
   }
 }
 
