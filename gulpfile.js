@@ -13,6 +13,7 @@ const svgstore = require(`gulp-svgstore`);
 const posthtml = require(`gulp-posthtml`);
 const include = require(`posthtml-include`);
 const del = require(`del`);
+const run = require(`run-sequence`);
 const server = require(`browser-sync`).create();
 
 gulp.task(`style`, function() {
@@ -22,6 +23,9 @@ gulp.task(`style`, function() {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest(`source/css`))
+    .pipe(minify())
+    .pipe(rename(`style.min.css`))
     .pipe(gulp.dest(`source/css`))
     .pipe(server.stream());
 });
