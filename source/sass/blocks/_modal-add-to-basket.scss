@@ -1,8 +1,19 @@
 .modal-add-to-basket {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 17px;
   font-family: $main-font;
+
+  transform: translateX(-50%) translateY(-50%);
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .modal-add-to-basket__wrapper {

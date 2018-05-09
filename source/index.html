@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
+    <div class="overlay overlay--hidden"></div>
     <header class="main-header">
       <div class="main-header__wrapper">
         <nav class="main-header__nav main-nav">
@@ -88,12 +89,12 @@
         <div class="popular-categories__wrapper">
           <ul class="popular-categories__list">
             <li class="popular-categories__item">
-              <a class="popular-categories__link" href="#">
+              <a class="popular-categories__link" href="./catalog.html">
                 <h3 class="popular-categories__title popular-categories__title--interior">Предметы интерьера</h3>
               </a>
             </li>
             <li class="popular-categories__item">
-              <a class="popular-categories__link" href="#">
+              <a class="popular-categories__link" href="./catalog.html">
                 <h3 class="popular-categories__title popular-categories__title--toys">Детские игрушки</h3>
               </a>
             </li>
@@ -229,7 +230,7 @@
             </button>
           </div>
 
-          <a class="reviews__button button" href="">
+          <a class="reviews__button button" href="#new-review">
             Написать
           </a>
         </div>
@@ -336,7 +337,7 @@
       </div>
     </footer>
 
-    <section class="modal-add-to-basket">
+    <section class="modal-add-to-basket modal-add-to-basket--hidden">
       <div class="modal-add-to-basket__wrapper">
         <form class="modal-add-to-basket__form" method="post" action="https://echo.htmlacademy.ru">
           <h2 class="modal-add-to-basket__title">
@@ -373,5 +374,6 @@
     </section>
 
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/index-modal.js"></script>
   </body>
 </html>
