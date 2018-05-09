@@ -13,12 +13,27 @@
   height: 34px;
   margin-left: 29px;
 
-  & .developer__icon {
-    position: absolute;
-    top: 0;
-    left: 0;
+  outline: none;
 
-    width: 27px;
-    height: 34px;
+  &:hover .developer__icon,
+  &:focus .developer__icon {
+    fill: $site-color;
   }
+
+  &:active .developer__icon {
+    opacity: 0.3;
+  }
+}
+
+.developer__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 27px;
+  height: 34px;
+
+  transition: 0.3s ease-in-out;
+
+  fill: #63d1bb;
 }

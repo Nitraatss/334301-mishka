@@ -6,6 +6,18 @@
   width: 100%;
 
   border: 1px solid #ececec;
+  outline: none;
+
+  transition: 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .product__description {
@@ -25,6 +37,21 @@
   color: #000000;
   letter-spacing: 0;
   word-wrap: break-word;
+
+  a {
+    outline: none;
+
+    transition: 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .product__info {
@@ -44,6 +71,8 @@
   width: 260px;
   height: 195px;
 
+  outline: none;
+
   img {
     width: 100%;
     height: 100%;
@@ -53,6 +82,8 @@
 .product__wrapper {
   width: 260px;
   padding: 28px;
+
+  transition: 0.3s ease-in-out;
 }
 
 .product__money {
@@ -85,21 +116,36 @@
 
   background-color: transparent;
   border: none;
+  outline: none;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+  &:hover .product__basket-icon,
+  &:focus .product__basket-icon {
+    opacity: 1;
 
-    width: 20px;
-    height: 19px;
+    fill: $site-color;
+  }
 
-    background-image: url("../img/icon-cart.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  &:active .product__basket-icon {
+    opacity: 0.3;
   }
 }
+
+.product__basket-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 19px;
+
+  outline: none;
+  opacity: 0.2;
+
+  transition: 0.3s ease-in-out;
+
+  fill: #d3d2d2;
+}
+
 
 @media (min-width: $tablet-width) {
   .product {

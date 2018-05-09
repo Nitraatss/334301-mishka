@@ -31,6 +31,19 @@
   background-position: center;
   border: 1px solid #ececec;
 
+  transition: 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &:active {
+    outline: none;
+    opacity: 0.3;
+  }
+
   &--next {
     background-image: url("../img/icon-right-arrow.svg");
     border-left: none;
@@ -45,7 +58,7 @@
 @media (min-width: $tablet-width) {
   .controls {
     position: absolute;
-    right: 50px;
+    right: 54px;
     bottom: 3px;
 
     width: auto;

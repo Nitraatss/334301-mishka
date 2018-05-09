@@ -1,6 +1,6 @@
 .production {
-  margin-bottom: 58px;
-  padding-top: 25px;
+  margin-bottom: 60px;
+  padding-top: 48px;
 }
 
 .production__wrapper {
@@ -10,11 +10,21 @@
   align-items: flex-start;
   width: 260px;
   margin: 0 auto;
-  padding-top: 23px;
-  padding-bottom: 33px;
+  padding-bottom: 27px;
 
   background: #ffffff;
   border: 1px solid #ececec;
+
+  transition: 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .production__intro {
@@ -33,15 +43,17 @@
   color: #000000;
   letter-spacing: 0;
   word-wrap: break-word;
+}
 
-  & .production__camera-icon {
-    position: absolute;
-    top: 10px;
-    left: 34px;
+.production__camera-icon {
+  position: absolute;
+  top: 10px;
+  left: 34px;
 
-    width: 32px;
-    height: 22px;
-  }
+  width: 42px;
+  height: 32px;
+
+  fill: $site-color;
 }
 
 .production__subwrapper {
@@ -68,7 +80,20 @@
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+  outline: none;
   transform: translateX(-50%) translateY(-50%);
+
+  transition: 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    transform: translateX(-50%) translateY(-50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .production__info {
@@ -92,13 +117,12 @@
 
 @media (min-width: $tablet-width) {
   .production {
-    margin-bottom: 63px;
-    padding-top: 0;
+    margin-bottom: 25px;
+    padding-top: 23px;
   }
 
   .production__wrapper {
-    width: 768px;
-    padding: 0 50px;
+    width: 668px;
 
     border: none;
   }
@@ -125,11 +149,11 @@
 
     border: 1px solid #ececec;
     border-bottom: none;
+  }
 
-    & .production__camera-icon {
-      top: 41px;
-      left: 40px;
-    }
+  .production__camera-icon {
+    top: 33px;
+    left: 35px;
   }
 
   .production__order {
@@ -157,7 +181,7 @@
 
 @media (min-width: $desktop-width) {
   .production {
-    margin-bottom: 104px;
+    margin-bottom: 70px;
   }
 
   .production__wrapper {
@@ -165,25 +189,24 @@
 
     justify-content: flex-start;
     align-items: stretch;
-    width: 1150px;
-    padding: 0 50px;
+    width: 1050px;
   }
 
   .production__intro {
     position: absolute;
-    top: 98px;
-    left: 811px;
+    top: 91px;
+    left: 758px;
     z-index: 3;
 
     max-width: 178px;
     padding: 0;
 
     border: none;
+  }
 
-    & .production__camera-icon {
-      top: -51px;
-      left: 0;
-    }
+  .production__camera-icon {
+    top: -51px;
+    left: 0;
   }
 
   .production__subwrapper {

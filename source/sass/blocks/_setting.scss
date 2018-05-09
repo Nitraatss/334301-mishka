@@ -36,7 +36,7 @@
     padding-bottom: 34px;
 
     .setting__title {
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
   }
 
@@ -59,9 +59,10 @@
     }
   }
 
-
   &--phone,
   &--email {
+    position: relative;
+
     padding: 0;
     padding-bottom: 34px;
 
@@ -127,6 +128,34 @@
   }
 }
 
+.setting__icon {
+  position: absolute;
+  top: 32px;
+  right: 5px;
+
+  opacity: 0.2;
+
+  transition: 0.3s ease-in-out;
+
+  fill: $grey-color;
+
+  &--phone {
+    top: 33px;
+    right: 6px;
+
+    width: 25px;
+    height: 24px;
+  }
+
+  &--mail {
+    top: 30px;
+    right: 0;
+
+    width: 32px;
+    height: 32px;
+  }
+}
+
 .setting__title {
   position: relative;
 
@@ -158,6 +187,18 @@
   width: 100%;
   padding-left: 62px;
 
+  outline: none;
+
+  &:hover::before,
+  &:focus::before {
+    border: 2px solid $site-color;
+  }
+
+  &:active::before {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
+
+
   &--radio:not(:last-of-type) {
     margin-bottom: 25px;
   }
@@ -178,6 +219,8 @@
     background-repeat: no-repeat;
     background-position: center;
     transform: translateY(-25%);
+
+    transition: 0.3s ease-in-out;
   }
 
   &--radio::before {
@@ -193,7 +236,7 @@
     width: 40px;
     height: 39px;
 
-    background-color: white;
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 22px 16px;
@@ -213,6 +256,7 @@
 .color-4:checked ~ label[for="color-4"]::before,
 .color-5:checked ~ label[for="color-5"]::before,
 .color-6:checked ~ label[for="color-6"]::before {
+  background-color: transparent;
   background-image: url("../img/icon-tick.svg");
 }
 
@@ -233,19 +277,38 @@
   color: $grey-color;
   letter-spacing: 0;
 
+  background-color: transparent;
   border: none;
   border-bottom: 2px solid $grey-color;
+
+  transition: 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $site-color;
+  }
+
+  &:hover + .setting__icon,
+  &:focus + .setting__icon {
+    opacity: 1;
+
+    fill: $site-color;
+  }
+
+  &:active {
+    color: rgb(68, 68, 68);
+  }
 
   &--phone {
     position: relative;
 
-    padding-right: 33px;
+    padding-right: 63px;
   }
 
   &--email {
     position: relative;
 
-    padding-right: 36px;
+    padding-right: 50px;
   }
 }
 
@@ -261,10 +324,31 @@
   color: $grey-color;
   letter-spacing: 0;
 
-  background: #ffffff;
+  background-color: transparent;
   border: 2px solid $grey-color;
 
+  transition: 0.3s ease-in-out;
+
   resize: none;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $site-color;
+  }
+
+  &:hover + .setting__icon,
+  &:focus + .setting__icon {
+    fill: $site-color;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 1);
+  }
+}
+
+.setting__text-input::placeholder,
+.setting__textarea::placeholder {
+  color: rgba(68, 68, 68, 0.3);
 }
 
 @media (min-width: $tablet-width) {
@@ -408,7 +492,6 @@
       width: 52px;
       height: 52px;
 
-      background-color: white;
       background-repeat: no-repeat;
       background-position: center;
       background-size: 33px 32px;
@@ -421,7 +504,20 @@
     background-color: $site-color;
     box-shadow: inset 0 0 0 13px white;
   }
+
+  .setting__icon {
+    &--phone {
+      top: 60px;
+      right: 75px;
+    }
+
+    &--mail {
+      top: 35px;
+      right: 75px;
+    }
+  }
 }
+
 
 @media (min-width: $desktop-width) {
   .setting__title {
@@ -508,6 +604,18 @@
       .setting__textarea {
         width: 700px;
       }
+    }
+  }
+
+  .setting__icon {
+    &--phone {
+      top: 65px;
+      right: 235px;
+    }
+
+    &--mail {
+      top: 35px;
+      right: 230px;
     }
   }
 }

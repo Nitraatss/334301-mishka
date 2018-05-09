@@ -15,15 +15,15 @@
             <picture>
               <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
-              <img class="main-header__logo-img" src="./img/logo-mobile.svg" alt="логотип сайта">
+              <img class="main-nav__logo-img" src="./img/logo-mobile.svg" alt="логотип сайта" width="86" height="35">
             </picture>
           </a>
 
-          <button class="main-nav__toggle-button" type="button">
+          <button class="main-nav__toggle-button main-nav__toggle-button--open" type="button">
             <span class="visually-hidden">Переключатель меню</span>
           </button>
 
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list site-list--hidden">
             <li class="site-list__item">
               <a href="./catalog.html">
                 Каталог товаров
@@ -36,20 +36,26 @@
             </li>
           </ul>
 
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list site-list--hidden">
             <li class="site-list__item site-list__item--search">
               <a href="#">
                 Поиск по сайту
+                <svg class="site-list__search-icon" width="18" height="18">
+                  <use xlink:href="./img/sprite.svg#icon-search"></use>
+                </svg>
               </a>
             </li>
             <li class="site-list__item site-list__item--basket">
               <a href="#">
                 Корзина: пока пуста
+                <svg class="site-list__cart-icon" width="18" height="18">
+                  <use xlink:href="./img/sprite.svg#icon-cart"></use>
+                </svg>
               </a>
             </li>
           </ul>
 
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list site-list--hidden">
             <li class="site-list__item site-list__item--new">
               <a href="#">
                 Новые поступления
@@ -127,9 +133,13 @@
 
           <figure class="week-offer__figure">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="./img/triple-set-desktop@1x_result.webp 1x, ./img/triple-set-desktop@2x_result.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/triple-set-tablet@1x_result.webp 1x, ./img/triple-set-tablet@2x_result.webp 2x">
+              <source type="image/webp" srcset="./img/triple-set-mobile@1x_result.webp 1x, ./img/triple-set-mobile@2x_result.webp 2x">
+
               <source media="(min-width: 1150px)" srcset="./img/triple-set-desktop@1x.jpg 1x, ./img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="./img/triple-set-tablet@1x.jpg 1x, ./img/triple-set-tablet@2x.jpg 2x">
-              <img class="week-offer__image" src="./img/triple-set-tablet@1x.jpg" srcset="./img/triple-set-tablet@2x.jpg 2x" alt="Изображение товара недели">
+              <img class="week-offer__image" src="./img/triple-set-mobile@1x.jpg" srcset="./img/triple-set-mobile@2x.jpg 2x" alt="Изображение товара недели" width="260" height="315">
             </picture>
           </figure>
 
@@ -153,27 +163,39 @@
           <ul class="about-us__features-list">
             <li class="about-us__feature about-us__feature--eco">
               Экологически<br>чистые материалы
-              <img class="about-us__icon" src="./img/icon-feature-flower.svg" alt="иконка экологии">
+              <svg class="about-us__icon" width="40" height="40" aria-hidden="true" role="presentation">
+                <use xlink:href="./img/sprite.svg#icon-feature-flower"></use>
+              </svg>
             </li>
             <li class="about-us__feature about-us__feature--money">
               Скандинавский стиль<br>по российской цене
-              <img class="about-us__icon" src="./img/icon-feature-money.svg" alt="иконка денег">
+              <svg class="about-us__icon" width="40" height="40" aria-hidden="true" role="presentation">
+                <use xlink:href="./img/sprite.svg#icon-feature-money"></use>
+              </svg>
             </li>
             <li class="about-us__feature about-us__feature--like">
               Увеличивает лайки<br>на фотографиях
-              <img class="about-us__icon" src="./img/icon-feature-heart.svg" alt="иконка лайка">
+              <svg class="about-us__icon" width="40" height="40" aria-hidden="true" role="presentation">
+                <use xlink:href="./img/sprite.svg#icon-feature-heart"></use>
+              </svg>
             </li>
             <li class="about-us__feature about-us__feature--tailor">
               Связано вручную с<br>любовью и умилением
-              <img class="about-us__icon" src="./img/icon-feature-ball.svg" alt="иконка клубка">
+              <svg class="about-us__icon" width="40" height="40" aria-hidden="true" role="presentation">
+                <use xlink:href="./img/sprite.svg#icon-feature-ball"></use>
+              </svg>
             </li>
             <li class="about-us__feature about-us__feature--rocket">
               Поддержка отечественного производителя
-              <img class="about-us__icon" src="./img/icon-feature-rocket.svg" alt="иконка ракеты">
+              <svg class="about-us__icon" width="40" height="40" aria-hidden="true" role="presentation">
+                <use xlink:href="./img/sprite.svg#icon-feature-rocket"></use>
+              </svg>
             </li>
             <li class="about-us__feature about-us__feature--gift">
               Поставляется в<br>подарочной упаковке
-              <img class="about-us__icon" src="./img/icon-feature-gift.svg" alt="иконка подарка">
+              <svg class="about-us__icon" width="40" height="40" aria-hidden="true" role="presentation">
+                <use xlink:href="./img/sprite.svg#icon-feature-gift"></use>
+              </svg>
             </li>
           </ul>
         </div>
@@ -216,7 +238,11 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <div class="contacts__subwrapper">
-            <h2 class="contacts__intro">Контакты</h2>
+            <h2 class="contacts__intro">
+              Контакты
+
+              <img class="contacts__flag-icon" src="./img/icon-flag.svg" width="47" height="81" alt="флаг">
+            </h2>
 
             <section class="contacts__info info">
               <h2 class="visually-hidden">Наш email и адрес</h2>
@@ -243,9 +269,13 @@
           <section class="contacts__map map">
             <h2 class="visually-hidden">Карта</h2>
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="./img/map-desktop@1x_result.webp 1x, ./img/map-desktop@2x_result.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/map-tablet@1x_result.webp 1x, ./img/map-tablet@2x_result.webp 2x">
+              <source type="image/webp" srcset="./img/map-mobile@1x_result.webp 1x, ./img/map-mobile@2x_result.webp 2x">
+
               <source media="(min-width: 1150px)" srcset="./img/map-desktop@1x.jpg 1x, ./img/map-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg 1x, ./img/map-tablet@2x.jpg 2x">
-              <img class="map__img" src="./img/map-mobile@1x.jpg" srcset="./img/map-mobile@2x.jpg 2x" alt="карта">
+              <img class="map__img" src="./img/map-mobile@1x.jpg" srcset="./img/map-mobile@2x.jpg 2x" alt="карта" width="320" height="457">
             </picture>
           </section>
 
@@ -259,24 +289,36 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <a class="main-footer__logo">
-          <img class="main-footer__logo-img" src="./img/logo-mobile.svg" alt="Логотип сайта" width="86" height="35">
+          <svg class="main-footer__logo-img" width="102" height="34" aria-labelledby="footer-logo-heading">
+            <title id="footer-logo-heading">Логотип сайта</title>
+            <use xlink:href="./img/sprite.svg#logo-footer"></use>
+          </svg>
         </a>
 
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item social__item--inst">
               <a href="#">
-                <span class="visually-hidden">instagramm</span>
+                <svg class="social__icon social__icon--inst" width="22" height="21" aria-labelledby="instagramm-heading">
+                  <title id="instagramm-heading">Instagramm</title>
+                  <use xlink:href="./img/sprite.svg#icon-insta"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item social__item--fb">
               <a href="#">
-                <span class="visually-hidden">facebook</span>
+                <svg class="social__icon social__icon--fb" width="15" height="28" aria-labelledby="facebook-heading">
+                  <title id="facebook-heading">Facebook</title>
+                  <use xlink:href="./img/sprite.svg#icon-fb"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item social__item--tw">
               <a href="#">
-                <span class="visually-hidden">twitter</span>
+                <svg class="social__icon social__icon--tw" width="23" height="20" aria-labelledby="twitter-heading">
+                  <title id="twitter-heading">Twitter</title>
+                  <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -285,7 +327,10 @@
         <div class="main-footer__developer developer">
           <span class="developer__intro">Разработано</span>
           <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <img class="developer__icon" src="./img/htmlacademy.svg" alt="Логотип академии" width="27" height="34">
+            <svg class="developer__icon" width="27" height="34" aria-labelledby="developer-heading" role="img">
+              <title id="developer-heading">Логотип академии</title>
+              <use xlink:href="./img/sprite.svg#htmlacademy-logo"></use>
+            </svg>
           </a>
         </div>
       </div>
@@ -326,5 +371,7 @@
         </form>
       </div>
     </section>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

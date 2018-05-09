@@ -12,6 +12,22 @@
   text-transform: uppercase;
   letter-spacing: 0;
 
-  background: #ffffff;
+  background-color: #ffffff;
   border: 2px solid $grey-color;
+
+  transition: 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: white;
+
+    background-color: $grey-color;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    outline: none;
+  }
 }

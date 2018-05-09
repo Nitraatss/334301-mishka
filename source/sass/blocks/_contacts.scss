@@ -1,13 +1,17 @@
 .contacts {
   margin-bottom: 38px;
-  padding-top: 38px;
-
-  border-top: 1px solid black;
+  padding-top: 40px;
 }
 
 .contacts__wrapper {
   width: 320px;
   margin: 0 auto;
+
+  @include zigzag;
+
+  &::before {
+    top: -38px;
+  }
 }
 
 .contacts__subwrapper {
@@ -15,6 +19,8 @@
 }
 
 .contacts__intro {
+  position: relative;
+
   max-width: 100%;
   margin: 0;
   margin-bottom: 25px;
@@ -28,6 +34,11 @@
   word-wrap: break-word;
 }
 
+.contacts__flag-icon {
+  display: none;
+  width: 47px;
+  height: 81px;
+}
 
 .contacts__info {
   padding: 0 30px;
@@ -44,11 +55,15 @@
 @media (min-width: $tablet-width) {
   .contacts {
     margin-bottom: 57px;
-    padding-top: 71px;
+    padding-top: 78px;
   }
 
   .contacts__wrapper {
     width: 768px;
+
+    &::before {
+      top: -71px;
+    }
   }
 
   .contacts__intro {
@@ -58,6 +73,14 @@
 
     font-size: 43px;
     line-height: 50px;
+  }
+
+  .contacts__flag-icon {
+    position: absolute;
+    top: -15px;
+    right: 50px;
+
+    display: block;
   }
 
   .contacts__info {
@@ -84,14 +107,16 @@
   }
 
   .contacts__wrapper {
-    position: relative;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
     width: 1150px;
     padding: 0 50px;
+
+    &::before {
+      top: -85px;
+    }
   }
 
   .contacts__subwrapper {
@@ -107,6 +132,10 @@
 
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .contacts__flag-icon {
+    left: -111px;
   }
 
   .contacts__info {

@@ -63,11 +63,14 @@
   letter-spacing: 0;
 
   background: #ffffff;
-  border: 2px solid $grey-color;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  outline: none;
 
-  &--checked {
-    background: red;
-    border: 2px solid $site-color;
+  transition: 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    border: 2px solid rgba(68, 68, 68, 0.3);
   }
 }
 
@@ -91,6 +94,18 @@
 
   background-color: $site-color;
   border: none;
+  outline: none;
+
+  transition: 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

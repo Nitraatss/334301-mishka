@@ -1,8 +1,9 @@
 .main-footer {
-  width: 100%;
+  width: 320px;
   min-width: inherit;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  margin: 0 auto;
+  padding-top: 27px;
+  padding-bottom: 30px;
 
   font-weight: 700;
   font-size: 19px;
@@ -25,10 +26,28 @@
 
 .main-footer__logo {
   display: none;
+
+  outline: none;
+}
+
+.main-footer__logo-img {
+  transition: 0.3s ease-in-out;
+}
+
+.main-footer__logo[href] {
+  &:hover .main-footer__logo-img,
+  &:focus .main-footer__logo-img {
+    fill: $site-color;
+  }
+
+  &:active .main-footer__logo-img {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-footer {
+    width: $tablet-width;
     padding: 57px 0;
   }
 
@@ -46,5 +65,12 @@
   .main-footer__logo-img {
     width: 100%;
     height: inherit;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    width: $desktop-width;
   }
 }
