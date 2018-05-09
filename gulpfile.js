@@ -38,7 +38,15 @@ gulp.task(`images`, function() {
 
 gulp.task(`prepareSpriteSVGs`, function() {
   return gulp.src([
-    `source/img/icon-*.svg`,
+    `source/img/icon-cart.svg`,
+    `source/img/icon-search.svg`,
+    `source/img/icon-feature-*.svg`,
+    `source/img/icon-camera.svg`,
+    `source/img/icon-phone.svg`,
+    `source/img/icon-mail.svg`,
+    `source/img/icon-twitter.svg`,
+    `source/img/icon-fb.svg`,
+    `source/img/icon-insta.svg`,
     `source/img/htmlacademy.svg`,
     `source/img/logo-footer.svg`
     ])
@@ -62,7 +70,15 @@ gulp.task(`webp`, function() {
 
 gulp.task(`sprite`, function() {
   return gulp.src([
-    `source/img/icon-*.svg`,
+    `source/img/icon-cart.svg`,
+    `source/img/icon-search.svg`,
+    `source/img/icon-feature-*.svg`,
+    `source/img/icon-camera.svg`,
+    `source/img/icon-phone.svg`,
+    `source/img/icon-mail.svg`,
+    `source/img/icon-twitter.svg`,
+    `source/img/icon-fb.svg`,
+    `source/img/icon-insta.svg`,
     `source/img/htmlacademy.svg`,
     `source/img/logo-footer.svg`
   ])
