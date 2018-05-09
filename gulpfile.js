@@ -23,10 +23,10 @@ gulp.task(`style`, function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest(`source/css`))
+    .pipe(gulp.dest(`build/css`))
     .pipe(minify())
     .pipe(rename(`style.min.css`))
-    .pipe(gulp.dest(`source/css`))
+    .pipe(gulp.dest(`build/css`))
     .pipe(server.stream());
 });
 
@@ -97,7 +97,7 @@ gulp.task(`html`, function() {
   return gulp.src(`source/*.html`)
     .pipe(posthtml([
       include()]))
-    .pipe(gulp.dest(`source`))
+    .pipe(gulp.dest(`build`))
 });
 
 gulp.task(`copy`, function() {
@@ -116,12 +116,12 @@ gulp.task(`clean`, function() {
 });
 
 gulp.task(`build`, function(done) {
-  run(`clean`, `copy`, `style`, `images`, `prepareSpriteSVGs`, `webp`, `html`, done);
+  run(`clean`, `style`, `images`, `prepareSpriteSVGs`, `sprite`, `webp`, `copy`, `html`, done);
 })
 
-gulp.task(`serve`, [`style`], function() {
+gulp.task(`serve`, function() {
   server.init({
-    server: `source/`,
+    server: `build/`,
     notify: false,
     open: true,
     cors: true,
@@ -129,5 +129,5 @@ gulp.task(`serve`, [`style`], function() {
   });
 
   gulp.watch(`source/sass/**/*.{scss,sass}`, [`style`]);
-  gulp.watch(`source/*.html`).on(`change`, server.reload);
+  gulp.watch(`source/*.html`, [`html`]);
 });
