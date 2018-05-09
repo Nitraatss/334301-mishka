@@ -117,12 +117,13 @@
 
 @media (min-width: $tablet-width) {
   .production {
-    margin-bottom: 25px;
+    margin-bottom: 52px;
     padding-top: 23px;
   }
 
   .production__wrapper {
     width: 668px;
+    padding-bottom: 0;
 
     border: none;
   }
