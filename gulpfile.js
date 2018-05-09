@@ -31,6 +31,25 @@ gulp.task(`images`, function() {
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest(`source/img`))
+});
+
+gulp.task(`prepareSpriteSVGs`, function() {
+  return gulp.src([
+    `source/img/icon-*.svg`,
+    `source/img/htmlacademy.svg`,
+    `source/img/logo-footer.svg`
+    ])
+    .pipe(imagemin([
+      imagemin.svgo(
+        {
+          plugins: [
+            {removeAttrs: {attrs:['fill']}}
+          ]
+        }
+      )
     ]))
     .pipe(gulp.dest(`source/img`))
 });
@@ -44,7 +63,7 @@ gulp.task(`webp`, function() {
 gulp.task(`sprite`, function() {
   return gulp.src([
     `source/img/icon-*.svg`,
-    `source/img/htmlacademy-logo.svg`,
+    `source/img/htmlacademy.svg`,
     `source/img/logo-footer.svg`
   ])
     .pipe(svgstore({
@@ -77,7 +96,7 @@ gulp.task(`clean`, function() {
 });
 
 gulp.task(`build`, function(done) {
-  run(`clean`, `copy`, `style`, `images`, `webp`, `html`, done);
+  run(`clean`, `copy`, `style`, `images`, `prepareSpriteSVGs`, `webp`, `html`, done);
 })
 
 gulp.task(`serve`, [`style`], function() {
