@@ -17,7 +17,7 @@
   }
 
   &--type {
-    padding-bottom: 45px;
+    padding-bottom: 43px;
 
     .setting__title {
       margin-bottom: 32px;
@@ -28,15 +28,15 @@
     padding-bottom: 43px;
 
     .setting__title {
-      margin-bottom: 33px;
+      margin-bottom: 32px;
     }
   }
 
   &--user {
-    padding-bottom: 34px;
+    padding-bottom: 32px;
 
     .setting__title {
-      margin-bottom: 24px;
+      margin-bottom: 29px;
     }
   }
 
@@ -50,7 +50,7 @@
         top: 50%;
         left: 63px;
 
-        width: 196px;
+        width: 198px;
         height: 1px;
 
         background-color: $site-color;
@@ -64,7 +64,6 @@
     position: relative;
 
     padding: 0;
-    padding-bottom: 34px;
 
     .setting__title {
       margin-bottom: 4px;
@@ -72,14 +71,16 @@
   }
 
   &--phone {
+    padding-bottom: 32px;
+
     .setting__title {
       &::after {
         content: "";
         position: absolute;
         top: 50%;
-        left: 82px;
+        left: 63px;
 
-        width: 178px;
+        width: 198px;
         height: 1px;
 
         background-color: $site-color;
@@ -89,6 +90,8 @@
   }
 
   &--email {
+    padding-bottom: 34px;
+
     .setting__title {
       &::after {
         content: "";
@@ -148,8 +151,8 @@
   }
 
   &--mail {
-    top: 30px;
-    right: 0;
+    top: 34px;
+    right: 2px;
 
     width: 32px;
     height: 32px;
@@ -397,20 +400,30 @@
     }
 
     &--colors {
-      padding: 65px 50px;
+      padding: 0 50px;
+      padding-top: 62px;
+      padding-bottom: 10px;
 
       background-color: #f1f1f1;
 
       .setting__wrapper {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
       }
 
       .setting__value {
-        width: 50%;
+        width: 205px;
+        margin-right: 45px;
+        margin-bottom: 0;
 
-        &:nth-last-of-type(2) {
-          margin: 0;
+        &:nth-of-type(2n) {
+          position: relative;
+          right: -13px;
+        }
+
+        &:not(:nth-last-of-type(1)),
+        &:not(:nth-last-of-type(2)) {
+          margin-bottom: 58px;
         }
       }
     }
@@ -430,7 +443,8 @@
         width: 500px;
 
         .setting__text-input {
-          margin-left: 22px;
+          margin-left: 34px;
+          padding-left: 10px;
         }
       }
     }
@@ -556,18 +570,31 @@
     }
 
     &--colors {
+      padding-top: 65px;
+
       .setting__wrapper {
         justify-content: flex-start;
-        max-width: 710px;
+        max-width: 730px;
       }
 
       .setting__value {
-        width: 33%;
+        position: relative;
 
-        &:nth-last-of-type(1),
-        &:nth-last-of-type(2),
-        &:nth-last-of-type(3) {
-          margin-bottom: 0;
+        width: 205px;
+        margin: 0;
+
+        &:nth-of-type(2n) {
+          right: 0;
+        }
+
+        &:not(:nth-of-type(3n)) {
+          margin-right: 57px;
+        }
+
+        &:not(:nth-last-of-type(1)),
+        &:not(:nth-last-of-type(2)),
+        &:not(:nth-last-of-type(3)) {
+          margin-bottom: 57px;
         }
       }
 
