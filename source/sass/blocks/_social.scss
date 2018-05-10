@@ -9,13 +9,18 @@
 .social__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.social__item:nth-of-type(3n-2),
+.social__item:nth-of-type(2n) {
+  margin-right: 40px;
 }
 
 .social__item a {
@@ -41,8 +46,6 @@
 }
 
 .social__item--fb {
-  margin: 0 40px;
-
   a {
     width: 15px;
     height: 28px;
