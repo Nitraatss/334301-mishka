@@ -38,8 +38,6 @@
 
     word-wrap: break-word;
 
-    transition: 0.3s ease-in-out;
-
     &:hover,
     &:focus {
       outline: none;
@@ -83,8 +81,6 @@
 
   transform: translateY(-50%);
 
-  transition: 0.3s ease-in-out;
-
   fill: #d3d2d2;
 
   &:active {
@@ -105,8 +101,6 @@
   height: 18px;
 
   transform: translateY(-50%);
-
-  transition: 0.3s ease-in-out;
 
   fill: #d3d2d2;
 }

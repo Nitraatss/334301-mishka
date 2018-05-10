@@ -12,8 +12,6 @@
 .main-nav__logo {
   display: block;
   padding: 18px 0;
-
-  transition: 0.3s ease-in-out;
 }
 
 .main-nav__logo[href] {
@@ -49,8 +47,6 @@
 
   border: none;
   outline: none;
-
-  transition: 0.3s ease-in-out;
 
   &--open::before {
     content: "";
