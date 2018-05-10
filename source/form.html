@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <header class="main-header">
       <div class="main-header__wrapper">
         <nav class="main-header__nav main-nav">
@@ -23,7 +27,7 @@
             <span class="visually-hidden">Переключатель меню</span>
           </button>
 
-          <ul class="main-nav__list site-list site-list--hidden">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="./catalog.html">
                 Каталог товаров
@@ -36,7 +40,7 @@
             </li>
           </ul>
 
-          <ul class="main-nav__list site-list site-list--hidden">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--search">
               <a href="#">
                 Поиск по сайту
@@ -55,7 +59,7 @@
             </li>
           </ul>
 
-          <ul class="main-nav__list site-list site-list--hidden">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--new">
               <a href="#">
                 Новые поступления

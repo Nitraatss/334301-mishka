@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
     <div class="overlay overlay--hidden"></div>
     <header class="main-header">
       <div class="main-header__wrapper">
@@ -24,7 +28,7 @@
             <span class="visually-hidden">Переключатель меню</span>
           </button>
 
-          <ul class="main-nav__list site-list site-list--hidden">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="./catalog.html">
                 Каталог товаров
@@ -37,7 +41,7 @@
             </li>
           </ul>
 
-          <ul class="main-nav__list site-list site-list--hidden">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--search">
               <a href="#">
                 Поиск по сайту
@@ -56,7 +60,7 @@
             </li>
           </ul>
 
-          <ul class="main-nav__list site-list site-list--hidden">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--new">
               <a href="#">
                 Новые поступления
@@ -188,7 +192,7 @@
           <h2 class="production__intro">
             Процесс производства
             <svg class="production__camera-icon" width="32" height="32" aria-hidden="true" role="presentation">
-              <use xlink:href="./img/sprite.svg#icon-camera"></use>
+              <use xlink:href="./img/sprite.svg#icon-video"></use>
             </svg>
           </h2>
 
