@@ -195,7 +195,13 @@
 
     &:not(:last-of-type) {
       .product__info {
-        margin-bottom: 41px;
+        margin-bottom: 36px;
+      }
+    }
+
+    &:last-of-type {
+      .product__info {
+        margin-bottom: 14px;
       }
     }
   }
