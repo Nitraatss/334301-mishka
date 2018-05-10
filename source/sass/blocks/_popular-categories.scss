@@ -20,8 +20,6 @@
 .popular-categories__item {
   background-color: #63d1bb;
 
-  transition: 0.3s ease-in-out;
-
   &:hover,
   &:focus {
     margin-top: -5px;
@@ -79,8 +77,6 @@
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.5;
-
-    transition: 0.3s ease-in-out;
   }
 
   &--interior::after {

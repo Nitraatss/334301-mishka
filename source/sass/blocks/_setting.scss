@@ -138,8 +138,6 @@
 
   opacity: 0.2;
 
-  transition: 0.3s ease-in-out;
-
   fill: $grey-color;
 
   &--phone {
@@ -233,8 +231,6 @@
     background-repeat: no-repeat;
     background-position: center;
     transform: translateY(-25%);
-
-    transition: 0.3s ease-in-out;
   }
 
   &--radio::before {
@@ -295,8 +291,6 @@
   border: none;
   border-bottom: 2px solid $grey-color;
 
-  transition: 0.3s ease-in-out;
-
   &:hover,
   &:focus {
     border-bottom: 2px solid $site-color;
@@ -340,8 +334,6 @@
 
   background-color: transparent;
   border: 2px solid $grey-color;
-
-  transition: 0.3s ease-in-out;
 
   resize: none;
 

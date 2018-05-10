@@ -15,8 +15,6 @@
   background: #ffffff;
   border: 1px solid #ececec;
 
-  transition: 0.3s ease-in-out;
-
   &:hover,
   &:focus {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
@@ -82,8 +80,6 @@
   border: none;
   outline: none;
   transform: translateX(-50%) translateY(-50%);
-
-  transition: 0.3s ease-in-out;
 
   &:hover,
   &:focus {
