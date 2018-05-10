@@ -21,7 +21,15 @@ gulp.task("style", function() {
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer({
+        browsers: [
+          'last 1 version',
+          'last 2 Chrome versions',
+          'last 2 Firefox versions',
+          'last 2 Opera versions',
+          'last 2 Edge versions'
+        ]}
+      )
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
