@@ -1,6 +1,6 @@
 .contacts {
   margin-bottom: 38px;
-  padding-top: 40px;
+  padding-top: 42px;
 }
 
 .contacts__wrapper {
@@ -55,7 +55,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     margin-bottom: 58px;
-    padding-top: 85px;
+    padding-top: 88px;
   }
 
   .contacts__wrapper {
@@ -69,6 +69,7 @@
   .contacts__intro {
     width: 100%;
     margin-bottom: 50px;
+    margin-left: -5px;
     padding: 0 50px;
 
     font-size: 43px;
