@@ -38,13 +38,16 @@
   }
 
   .catalog__wrapper {
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
   }
 
   .catalog__product {
-    &:not(:last-of-type) {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
+
+    &:nth-of-type(3n-1) {
+      margin-right: 51px;
+      margin-left: 51px;
     }
   }
 }

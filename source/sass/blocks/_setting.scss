@@ -175,11 +175,8 @@
   align-items: flex-start;
 }
 
-.setting--user__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+.color:focus + .setting__value--checkebox::before {
+  border: 2px solid $site-color;
 }
 
 .setting__value {
