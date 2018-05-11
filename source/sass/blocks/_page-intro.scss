@@ -29,7 +29,7 @@
   &--no-img {
     position: relative;
 
-    height: 177px;
+    min-height: 177px;
 
     background-color: #f1f1f1;
 
@@ -70,7 +70,7 @@
     &--no-img {
       z-index: -1;
 
-      min-height: 226px;
+      min-height: 240px;
 
       &::after {
         content: "";
@@ -89,7 +89,7 @@
 
       .page-catalog__title,
       .page-form__title {
-        margin-top: 80px;
+        margin-top: 83px;
       }
     }
   }
@@ -119,7 +119,12 @@
 
     &--no-img {
       width: 1150px;
-      height: 255px;
+      min-height: 263px;
+
+      .page-catalog__title,
+      .page-form__title {
+        margin-top: 80px;
+      }
     }
   }
 }

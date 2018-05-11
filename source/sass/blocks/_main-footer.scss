@@ -30,10 +30,6 @@
   outline: none;
 }
 
-.main-footer__logo-img {
-  transition: 0.3s ease-in-out;
-}
-
 .main-footer__logo[href] {
   &:hover .main-footer__logo-img,
   &:focus .main-footer__logo-img {
@@ -57,6 +53,9 @@
   }
 
   .main-footer__logo {
+    position: relative;
+    top: -4px;
+
     display: block;
     width: 102px;
     height: 34px;

@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
+    <div class="overlay overlay--hidden"></div>
     <header class="main-header">
       <div class="main-header__wrapper">
         <nav class="main-header__nav main-nav">
@@ -15,7 +20,7 @@
             <picture>
               <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
-              <img class="main-nav__logo-img" src="./img/logo-mobile.svg" alt="логотип сайта" width="86" height="35">
+                <img class="main-nav__logo-img" src="./img/logo-mobile.svg" alt="логотип сайта" width="86" height="35">
             </picture>
           </a>
 
@@ -23,7 +28,7 @@
             <span class="visually-hidden">Переключатель меню</span>
           </button>
 
-          <ul class="main-nav__list site-list site-list--hidden">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="./catalog.html">
                 Каталог товаров
@@ -36,7 +41,7 @@
             </li>
           </ul>
 
-          <ul class="main-nav__list site-list site-list--hidden">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--search">
               <a href="#">
                 Поиск по сайту
@@ -55,7 +60,7 @@
             </li>
           </ul>
 
-          <ul class="main-nav__list site-list site-list--hidden">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--new">
               <a href="#">
                 Новые поступления
@@ -87,9 +92,9 @@
           <article class="catalog__product product">
             <a class="product__image" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1150px)" srcset="./img/photo-hare-desktop@1x_result.webp 1x, ./img/photo-hare-desktop@2x_result.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-hare-tablet@1x_result.webp 1x, ./img/photo-hare-tablet@2x_result.webp 2x">
-                <source type="image/webp" srcset="./img/photo-hare-mobile@1x_result.webp 1x, ./img/photo-hare-mobile@2x_result.webp 2x">
+                <source type="image/webp" media="(min-width: 1150px)" srcset="./img/photo-hare-desktop@1x.webp 1x, ./img/photo-hare-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-hare-tablet@1x.webp 1x, ./img/photo-hare-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/photo-hare-mobile@1x.webp 1x, ./img/photo-hare-mobile@2x.webp 2x">
 
                 <source media="(min-width: 1150px)" srcset="./img/photo-hare-desktop@1x.jpg 1x, ./img/photo-hare-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/photo-hare-tablet@1x.jpg 1x, ./img/photo-hare-tablet@2x.jpg 2x">
@@ -119,9 +124,9 @@
           <article class="catalog__product product">
             <a class="product__image" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1150px)" srcset="./img/photo-bowl-desktop@1x_result.webp 1x, ./img/photo-bowl-desktop@2x_result.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-bowl-tablet@1x_result.webp 1x, ./img/photo-bowl-tablet@2x_result.webp 2x">
-                <source type="image/webp" srcset="./img/photo-bowl-mobile@1x_result.webp 1x, ./img/photo-bowl-mobile@2x_result.webp 2x">
+                <source type="image/webp" media="(min-width: 1150px)" srcset="./img/photo-bowl-desktop@1x.webp 1x, ./img/photo-bowl-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-bowl-tablet@1x.webp 1x, ./img/photo-bowl-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/photo-bowl-mobile@1x.webp 1x, ./img/photo-bowl-mobile@2x.webp 2x">
 
                 <source media="(min-width: 1150px)" srcset="./img/photo-bowl-desktop@1x.jpg 1x, ./img/photo-bowl-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/photo-bowl-tablet@1x.jpg 1x, ./img/photo-bowl-tablet@2x.jpg 2x">
@@ -151,9 +156,9 @@
           <article class="catalog__product product">
             <a class="product__image" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1150px)" srcset="./img/photo-toys-desktop@1x_result.webp 1x, ./img/photo-toys-desktop@2x_result.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-toys-tablet@1x_result.webp 1x, ./img/photo-toys-tablet@2x_result.webp 2x">
-                <source type="image/webp" srcset="./img/photo-toys-mobile@1x_result.webp 1x, ./img/photo-toys-mobile@2x_result.webp 2x">
+                <source type="image/webp" media="(min-width: 1150px)" srcset="./img/photo-toys-desktop@1x.webp 1x, ./img/photo-toys-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-toys-tablet@1x.webp 1x, ./img/photo-toys-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/photo-toys-mobile@1x.webp 1x, ./img/photo-toys-mobile@2x.webp 2x">
 
                 <source media="(min-width: 1150px)" srcset="./img/photo-toys-desktop@1x.jpg 1x, ./img/photo-toys-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="./img/photo-toys-tablet@1x.jpg 1x, ./img/photo-toys-tablet@2x.jpg 2x">
@@ -165,11 +170,11 @@
                 <h3 class="product__title">
                   <a href="#">Большая корзина<br>для игрушек</a>
                 </h3>
-                <p class="product__info">Большая корзина для игрушек</p>
+                <p class="product__info">Диаметр 30 см, высота 30 см</p>
               </div>
 
               <div class="product__money">
-                <span class="product__price">690 руб.</span>
+                <span class="product__price">1500 руб.</span>
                 <button class="product__add-to-basket-btn" type="button">
                   <span class="visually-hidden">Добавить в корзину</span>
                   <svg class="product__basket-icon" width="20" height="19">
@@ -187,15 +192,15 @@
           <h2 class="production__intro">
             Процесс производства
             <svg class="production__camera-icon" width="32" height="32" aria-hidden="true" role="presentation">
-              <use xlink:href="./img/sprite.svg#icon-camera"></use>
+              <use xlink:href="./img/sprite.svg#icon-video"></use>
             </svg>
           </h2>
 
           <div class="production__subwrapper">
             <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="./img/video-desktop@1x_result.webp 1x, ./img/video-desktop@2x_result.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="./img/video-tablet@1x_result.webp 1x, ./img/video-tablet@2x_result.webp 2x">
-              <source type="image/webp" srcset="./img/video-mobile@1x_result.webp 1x, ./img/video-mobile@2x_result.webp 2x">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="./img/video-desktop@1x.webp 1x, ./img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/video-tablet@1x.webp 1x, ./img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/video-mobile@1x.webp 1x, ./img/video-mobile@2x.webp 2x">
 
               <source media="(min-width: 1150px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x">
@@ -263,14 +268,14 @@
           <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="developer__icon" width="27" height="34" aria-labelledby="developer-heading" role="img">
               <title id="developer-heading">Логотип академии</title>
-              <use xlink:href="./img/sprite.svg#htmlacademy-logo"></use>
+              <use xlink:href="./img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
 
-    <section class="modal-add-to-basket">
+    <section class="modal-add-to-basket modal-add-to-basket--hidden">
       <div class="modal-add-to-basket__wrapper">
         <form class="modal-add-to-basket__form" method="post" action="https://echo.htmlacademy.ru">
           <h2 class="modal-add-to-basket__title">
@@ -282,7 +287,7 @@
           </p>
 
           <div class="modal-add-to-basket__subwrapper">
-            <input class="op-1 visually-hidden" type="radio" name="options" id="op-1" value="s" checked>
+            <input class="op-1 visually-hidden" type="radio" name="options" id="op-1" value="s" checked="">
             <label class="modal-add-to-basket__option" for="op-1">
               S
             </label>
@@ -292,8 +297,7 @@
               M
             </label>
 
-            <input class="op-3 visually-hidden" type="radio" name="options" id="op-3"
-            value="l">
+            <input class="op-3 visually-hidden" type="radio" name="options" id="op-3" value="l">
             <label class="modal-add-to-basket__option" for="op-3">
               L
             </label>
@@ -306,6 +310,9 @@
       </div>
     </section>
 
+    <script src="js/svgxuse.min.js" defer></script>
+    <script src="js/picturefill.min.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/catalog-modal.js"></script>
   </body>
 </html>

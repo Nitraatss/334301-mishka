@@ -43,8 +43,6 @@
     border-bottom: 1px solid $site-color;
     outline: none;
 
-    transition: 0.3s ease-in-out;
-
     &:hover,
     &:focus {
       color: $site-color;
@@ -70,6 +68,7 @@
 
   .info__intro {
     max-width: 55px;
+    margin-right: 24px;
   }
 }
 

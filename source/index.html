@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
+    <div class="overlay overlay--hidden"></div>
     <header class="main-header">
       <div class="main-header__wrapper">
         <nav class="main-header__nav main-nav">
@@ -23,7 +28,7 @@
             <span class="visually-hidden">Переключатель меню</span>
           </button>
 
-          <ul class="main-nav__list site-list site-list--hidden">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="./catalog.html">
                 Каталог товаров
@@ -36,12 +41,12 @@
             </li>
           </ul>
 
-          <ul class="main-nav__list site-list site-list--hidden">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--search">
               <a href="#">
                 Поиск по сайту
                 <svg class="site-list__search-icon" width="18" height="18">
-                  <use xlink:href="./img/sprite.svg#icon-search"></use>
+                  <use xlink:href="./img/#icon-search"></use>
                 </svg>
               </a>
             </li>
@@ -49,13 +54,13 @@
               <a href="#">
                 Корзина: пока пуста
                 <svg class="site-list__cart-icon" width="18" height="18">
-                  <use xlink:href="./img/sprite.svg#icon-cart"></use>
+                  <use xlink:href="./img/#icon-cart"></use>
                 </svg>
               </a>
             </li>
           </ul>
 
-          <ul class="main-nav__list site-list site-list--hidden">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--new">
               <a href="#">
                 Новые поступления
@@ -88,12 +93,12 @@
         <div class="popular-categories__wrapper">
           <ul class="popular-categories__list">
             <li class="popular-categories__item">
-              <a class="popular-categories__link" href="#">
+              <a class="popular-categories__link" href="./catalog.html">
                 <h3 class="popular-categories__title popular-categories__title--interior">Предметы интерьера</h3>
               </a>
             </li>
             <li class="popular-categories__item">
-              <a class="popular-categories__link" href="#">
+              <a class="popular-categories__link" href="./catalog.html">
                 <h3 class="popular-categories__title popular-categories__title--toys">Детские игрушки</h3>
               </a>
             </li>
@@ -133,13 +138,13 @@
 
           <figure class="week-offer__figure">
             <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="./img/triple-set-desktop@1x_result.webp 1x, ./img/triple-set-desktop@2x_result.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="./img/triple-set-tablet@1x_result.webp 1x, ./img/triple-set-tablet@2x_result.webp 2x">
-              <source type="image/webp" srcset="./img/triple-set-mobile@1x_result.webp 1x, ./img/triple-set-mobile@2x_result.webp 2x">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="./img/triple-set-desktop@1x.webp 1x, ./img/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/triple-set-tablet@1x.webp 1x, ./img/triple-set-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/triple-set-mobile@1x.webp 1x, ./img/triple-set-mobile@2x.webp 2x">
 
               <source media="(min-width: 1150px)" srcset="./img/triple-set-desktop@1x.jpg 1x, ./img/triple-set-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="./img/triple-set-tablet@1x.jpg 1x, ./img/triple-set-tablet@2x.jpg 2x">
-              <img class="week-offer__image" src="./img/triple-set-mobile@1x.jpg" srcset="./img/triple-set-mobile@2x.jpg 2x" alt="Изображение товара недели" width="260" height="315">
+              <img class="week-offer__image" src="./img/triple-set-mobile@1x.jpg"  srcset="./img/triple-set-mobile@2x.jpg 2x" alt="Изображение товара недели" width="260" height="315">
             </picture>
           </figure>
 
@@ -164,37 +169,37 @@
             <li class="about-us__feature about-us__feature--eco">
               Экологически<br>чистые материалы
               <svg class="about-us__icon" width="40" height="40" aria-hidden="true" role="presentation">
-                <use xlink:href="./img/sprite.svg#icon-feature-flower"></use>
+                <use xlink:href="./img/#icon-feature-flower"></use>
               </svg>
             </li>
             <li class="about-us__feature about-us__feature--money">
               Скандинавский стиль<br>по российской цене
               <svg class="about-us__icon" width="40" height="40" aria-hidden="true" role="presentation">
-                <use xlink:href="./img/sprite.svg#icon-feature-money"></use>
+                <use xlink:href="./img/#icon-feature-money"></use>
               </svg>
             </li>
             <li class="about-us__feature about-us__feature--like">
               Увеличивает лайки<br>на фотографиях
               <svg class="about-us__icon" width="40" height="40" aria-hidden="true" role="presentation">
-                <use xlink:href="./img/sprite.svg#icon-feature-heart"></use>
+                <use xlink:href="./img/#icon-feature-heart"></use>
               </svg>
             </li>
             <li class="about-us__feature about-us__feature--tailor">
               Связано вручную с<br>любовью и умилением
               <svg class="about-us__icon" width="40" height="40" aria-hidden="true" role="presentation">
-                <use xlink:href="./img/sprite.svg#icon-feature-ball"></use>
+                <use xlink:href="./img/#icon-feature-ball"></use>
               </svg>
             </li>
             <li class="about-us__feature about-us__feature--rocket">
               Поддержка отечественного производителя
               <svg class="about-us__icon" width="40" height="40" aria-hidden="true" role="presentation">
-                <use xlink:href="./img/sprite.svg#icon-feature-rocket"></use>
+                <use xlink:href="./img/#icon-feature-rocket"></use>
               </svg>
             </li>
             <li class="about-us__feature about-us__feature--gift">
               Поставляется в<br>подарочной упаковке
               <svg class="about-us__icon" width="40" height="40" aria-hidden="true" role="presentation">
-                <use xlink:href="./img/sprite.svg#icon-feature-gift"></use>
+                <use xlink:href="./img/#icon-feature-gift"></use>
               </svg>
             </li>
           </ul>
@@ -213,7 +218,7 @@
                 Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
               </blockquote>
               <div class="review__author author">
-                <span class="author__name">Натали Дормер</span>
+                <span class="author__name">Анастасия Красильникова</span>
                 <a class="author__social" href="#">
                 @misssssiskras</a>
               </div>
@@ -229,7 +234,7 @@
             </button>
           </div>
 
-          <a class="reviews__button button" href="">
+          <a class="reviews__button button" href="#new-review">
             Написать
           </a>
         </div>
@@ -268,15 +273,9 @@
 
           <section class="contacts__map map">
             <h2 class="visually-hidden">Карта</h2>
-            <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="./img/map-desktop@1x_result.webp 1x, ./img/map-desktop@2x_result.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="./img/map-tablet@1x_result.webp 1x, ./img/map-tablet@2x_result.webp 2x">
-              <source type="image/webp" srcset="./img/map-mobile@1x_result.webp 1x, ./img/map-mobile@2x_result.webp 2x">
-
-              <source media="(min-width: 1150px)" srcset="./img/map-desktop@1x.jpg 1x, ./img/map-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="./img/map-tablet@1x.jpg 1x, ./img/map-tablet@2x.jpg 2x">
-              <img class="map__img" src="./img/map-mobile@1x.jpg" srcset="./img/map-mobile@2x.jpg 2x" alt="карта" width="320" height="457">
-            </picture>
+            <div class="map__img">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424177174!2d30.320889251074487!3d59.938796868959656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1525885990589" allowfullscreen=""></iframe>
+            </div>
           </section>
 
           <a class="contacts__button button" href="#">
@@ -291,7 +290,7 @@
         <a class="main-footer__logo">
           <svg class="main-footer__logo-img" width="102" height="34" aria-labelledby="footer-logo-heading">
             <title id="footer-logo-heading">Логотип сайта</title>
-            <use xlink:href="./img/sprite.svg#logo-footer"></use>
+            <use xlink:href="./img/#logo-footer"></use>
           </svg>
         </a>
 
@@ -301,7 +300,7 @@
               <a href="#">
                 <svg class="social__icon social__icon--inst" width="22" height="21" aria-labelledby="instagramm-heading">
                   <title id="instagramm-heading">Instagramm</title>
-                  <use xlink:href="./img/sprite.svg#icon-insta"></use>
+                  <use xlink:href="./img/#icon-insta"></use>
                 </svg>
               </a>
             </li>
@@ -309,7 +308,7 @@
               <a href="#">
                 <svg class="social__icon social__icon--fb" width="15" height="28" aria-labelledby="facebook-heading">
                   <title id="facebook-heading">Facebook</title>
-                  <use xlink:href="./img/sprite.svg#icon-fb"></use>
+                  <use xlink:href="./img/#icon-fb"></use>
                 </svg>
               </a>
             </li>
@@ -317,7 +316,7 @@
               <a href="#">
                 <svg class="social__icon social__icon--tw" width="23" height="20" aria-labelledby="twitter-heading">
                   <title id="twitter-heading">Twitter</title>
-                  <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+                  <use xlink:href="./img/#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -329,14 +328,14 @@
           <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="developer__icon" width="27" height="34" aria-labelledby="developer-heading" role="img">
               <title id="developer-heading">Логотип академии</title>
-              <use xlink:href="./img/sprite.svg#htmlacademy-logo"></use>
+              <use xlink:href="./img/#htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
 
-    <section class="modal-add-to-basket">
+    <section class="modal-add-to-basket modal-add-to-basket--hidden">
       <div class="modal-add-to-basket__wrapper">
         <form class="modal-add-to-basket__form" method="post" action="https://echo.htmlacademy.ru">
           <h2 class="modal-add-to-basket__title">
@@ -348,7 +347,7 @@
           </p>
 
           <div class="modal-add-to-basket__subwrapper">
-            <input class="op-1 visually-hidden" type="radio" name="optionn" id="op-1" value="s" checked>
+            <input class="op-1 visually-hidden" type="radio" name="optionn" id="op-1" value="s" checked="">
             <label class="modal-add-to-basket__option" for="op-1">
               S
             </label>
@@ -358,8 +357,7 @@
               M
             </label>
 
-            <input class="op-3 visually-hidden" type="radio" name="optionn" id="op-3"
-            value="l">
+            <input class="op-3 visually-hidden" type="radio" name="optionn" id="op-3" value="l">
             <label class="modal-add-to-basket__option" for="op-3">
               L
             </label>
@@ -372,6 +370,9 @@
       </div>
     </section>
 
+    <script src="js/svgxuse.min.js" defer></script>
+    <script src="js/picturefill.min.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/index-modal.js"></script>
   </body>
 </html>

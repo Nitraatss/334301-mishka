@@ -1,5 +1,5 @@
 .about-us {
-  margin-bottom: 57px;
+  margin-bottom: 53px;
   padding-top: 33px;
 }
 
@@ -34,7 +34,7 @@
 
   max-width: 100%;
   margin-bottom: 33px;
-  padding-top: 57px;
+  padding-top: 60px;
 
   word-wrap: break-word;
 
@@ -120,7 +120,7 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    margin-bottom: 83px;
+    margin-bottom: 82px;
     padding-top: 0;
   }
 
@@ -134,6 +134,7 @@
 
   .about-us__intro {
     margin-bottom: 40px;
+    margin-left: -5px;
   }
 
   .about-us__features-list {
@@ -209,11 +210,11 @@
 
 @media (min-width: $desktop-width) {
   .about-us {
-    margin-bottom: 90px;
+    margin-bottom: 84px;
   }
 
   .about-us__wrapper {
-    padding-top: 70px;
+    padding-top: 80px;
     padding-left: 225px;
 
     &::before {

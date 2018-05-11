@@ -11,9 +11,7 @@
 
 .main-nav__logo {
   display: block;
-  padding: 22px 0;
-
-  transition: 0.3s ease-in-out;
+  padding: 18px 0;
 }
 
 .main-nav__logo[href] {
@@ -40,7 +38,7 @@
 
 .main-nav__toggle-button {
   position: absolute;
-  top: 29px;
+  top: 27px;
   left: 270px;
 
   width: 0;
@@ -50,13 +48,11 @@
   border: none;
   outline: none;
 
-  transition: 0.3s ease-in-out;
-
   &--open::before {
     content: "";
     position: absolute;
-    top: 3px;
-    left: 0;
+    top: 1px;
+    left: -1px;
 
     width: 20px;
     height: 21px;
@@ -146,6 +142,7 @@
     order: 1;
     margin-right: auto;
     margin-left: 75px;
+    padding-top: 10px;
   }
 
   .main-nav__logo-img {

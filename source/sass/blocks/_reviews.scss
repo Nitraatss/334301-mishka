@@ -1,5 +1,5 @@
 .reviews {
-  margin-bottom: 45px;
+  margin-bottom: 44px;
 }
 
 .reviews__wrapper {
@@ -28,12 +28,13 @@
   .reviews {
     position: relative;
 
-    margin-bottom: 115px;
-    padding-top: 82px;
+    margin-bottom: 105px;
+    padding-top: 80px;
   }
 
   .reviews__intro {
-    margin-bottom: 44px;
+    margin-bottom: 47px;
+    margin-left: -5px;
   }
 
   .reviews__controls {
@@ -57,7 +58,7 @@
   .reviews {
     position: relative;
 
-    margin-bottom: 169px;
+    margin-bottom: 165px;
     padding-top: 78px;
 
     .reviews__wrapper {
@@ -67,12 +68,12 @@
   }
 
   .reviews__intro {
-    margin-bottom: 44px;
-    margin-left: 175px;
+    margin-bottom: 47px;
+    margin-left: 173px;
   }
 
   .reviews__button {
-    top: 4px;
+    top: 8px;
     right: 0;
   }
 }

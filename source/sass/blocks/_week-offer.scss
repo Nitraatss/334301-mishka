@@ -1,6 +1,6 @@
 .week-offer {
   margin: 0 auto;
-  margin-bottom: 34px;
+  margin-bottom: 36px;
 }
 
 .week-offer__wrapper {
@@ -15,12 +15,12 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 23px;
 }
 
 .week-offer__intro {
   width: auto;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 .week-offer__subintro {
@@ -110,12 +110,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 53px;
+    margin-bottom: 50px;
+  }
+
+  .week-offer__intro {
+    margin-left: -5px;
   }
 
   .week-offer__subintro {
     display: inline-block;
     max-width: 110px;
+    margin-right: 8px;
 
     font-size: 17px;
     line-height: 17px;
@@ -187,13 +192,13 @@
   .week-offer__information {
     max-width: 290px;
     margin: 0;
-    margin-bottom: 305px;
+    margin-bottom: 295px;
     margin-left: 175px;
     padding: 0;
   }
 
   .week-offer__description {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   .week-offer__figure {
