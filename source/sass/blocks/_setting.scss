@@ -175,7 +175,7 @@
   align-items: flex-start;
 }
 
-.color:focus + .setting__value--checkebox::before {
+.input-ceckbox:focus + .setting__value--checkebox::before {
   border: 2px solid $site-color;
 }
 
