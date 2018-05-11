@@ -1,20 +1,23 @@
 "use strict";
 
-const gulp = require("gulp");
-const sass = require("gulp-sass");
-const plumber = require("gulp-plumber");
-const postcss = require("gulp-postcss");
-const autoprefixer = require("autoprefixer");
-const minify = require("gulp-csso");
-const rename = require("gulp-rename");
-const imagemin = require("gulp-imagemin");
-const webp = require("gulp-webp");
-const svgstore = require("gulp-svgstore");
-const posthtml = require("gulp-posthtml");
-const include = require("posthtml-include");
-const del = require("del");
-const run = require("run-sequence");
-const server = require("browser-sync").create();
+let gulp = require("gulp");
+let sass = require("gulp-sass");
+let plumber = require("gulp-plumber");
+let postcss = require("gulp-postcss");
+let autoprefixer = require("autoprefixer");
+let minify = require("gulp-csso");
+let rename = require("gulp-rename");
+let imagemin = require("gulp-imagemin");
+let webp = require("gulp-webp");
+let svgstore = require("gulp-svgstore");
+let htmlmin = require("gulp-htmlmin");
+let posthtml = require("gulp-posthtml");
+let include = require("posthtml-include");
+let babel = require("gulp-babel");
+let uglify = require("gulp-uglify");
+let del = require("del");
+let run = require("run-sequence");
+let server = require("browser-sync").create();
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -23,11 +26,11 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer({
         browsers: [
-          'last 1 version',
-          'last 2 Chrome versions',
-          'last 2 Firefox versions',
-          'last 2 Opera versions',
-          'last 2 Edge versions'
+          "last 1 version",
+          "last 2 Chrome versions",
+          "last 2 Firefox versions",
+          "last 2 Opera versions",
+          "last 2 Edge versions"
         ]}
       )
     ]))
@@ -66,7 +69,7 @@ gulp.task("prepareSpriteSVGs", function() {
       imagemin.svgo(
         {
           plugins: [
-            {removeAttrs: {attrs:['fill']}}
+            {removeAttrs: {attrs:["fill"]}}
           ]
         }
       )
@@ -101,11 +104,32 @@ gulp.task("sprite", function() {
     .pipe(gulp.dest("source/img"))
 });
 
+
 gulp.task("html", function() {
   return gulp.src("source/*.html")
     .pipe(posthtml([
       include()]))
     .pipe(gulp.dest("build"))
+});
+
+gulp.task("minifyHTML", function() {
+  return gulp.src("build/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("minifyJS", () => {
+  return gulp.src([
+    "source/js/catalog-modal.js",
+    "source/js/index-modal.js",
+    "source/js/mobile-menu.js"
+  ])
+    .pipe(babel({
+      presets: ["env"]
+    }))
+    .pipe(uglify())
+    .pipe(rename({suffix: ".min" }))
+    .pipe(gulp.dest("build/js/"));
 });
 
 gulp.task("copy", function() {
@@ -124,7 +148,7 @@ gulp.task("clean", function() {
 });
 
 gulp.task("build", function(done) {
-  run("clean", "style", "images", "prepareSpriteSVGs", "sprite", "webp", "copy", "html", done);
+  run("clean", "style", "images", "prepareSpriteSVGs", "sprite", "webp", "minifyJS", "copy", "html", "minifyHTML", done);
 })
 
 gulp.task("serve", function() {
