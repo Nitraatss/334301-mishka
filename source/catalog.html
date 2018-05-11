@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div style="display: none">
@@ -16,11 +18,11 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <nav class="main-header__nav main-nav">
-          <a class="main-nav__logo" href="./index.html">
+          <a class="main-nav__logo" href="index.html">
             <picture>
-              <source media="(min-width: 1150px)" srcset="./img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
-                <img class="main-nav__logo-img" src="./img/logo-mobile.svg" alt="логотип сайта" width="86" height="35">
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="main-nav__logo-img" src="img/logo-mobile.svg" alt="логотип сайта" width="86" height="35">
             </picture>
           </a>
 
@@ -30,12 +32,12 @@
 
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="./catalog.html">
+              <a href="catalog.html">
                 Каталог товаров
               </a>
             </li>
             <li class="site-list__item">
-              <a href="./form.html">
+              <a href="form.html">
                 Вязание на заказ
               </a>
             </li>
@@ -46,7 +48,7 @@
               <a href="#">
                 Поиск по сайту
                 <svg class="site-list__search-icon" width="18" height="18">
-                  <use xlink:href="./img/sprite.svg#icon-search"></use>
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
                 </svg>
               </a>
             </li>
@@ -54,7 +56,7 @@
               <a href="#">
                 Корзина: пока пуста
                 <svg class="site-list__cart-icon" width="18" height="18">
-                  <use xlink:href="./img/sprite.svg#icon-cart"></use>
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
               </a>
             </li>
@@ -92,13 +94,13 @@
           <article class="catalog__product product">
             <a class="product__image" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1150px)" srcset="./img/photo-hare-desktop@1x.webp 1x, ./img/photo-hare-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-hare-tablet@1x.webp 1x, ./img/photo-hare-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="./img/photo-hare-mobile@1x.webp 1x, ./img/photo-hare-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1150px)" srcset="./img/photo-hare-desktop@1x.jpg 1x, ./img/photo-hare-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./img/photo-hare-tablet@1x.jpg 1x, ./img/photo-hare-tablet@2x.jpg 2x">
-                <img src="./img/photo-hare-mobile@1x.jpg" srcset="./img/photo-hare-mobile@2x.jpg 2x" alt="Изображение товара" width="260" height="195">
+                <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Изображение товара" width="260" height="195">
               </picture>
             </a>
             <div class="product__wrapper">
@@ -114,7 +116,7 @@
                 <button class="product__add-to-basket-btn" type="button">
                   <span class="visually-hidden">Добавить в корзину</span>
                   <svg class="product__basket-icon" width="20" height="19">
-                    <use xlink:href="./img/sprite.svg#icon-cart"></use>
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
                 </button>
               </div>
@@ -124,13 +126,13 @@
           <article class="catalog__product product">
             <a class="product__image" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1150px)" srcset="./img/photo-bowl-desktop@1x.webp 1x, ./img/photo-bowl-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-bowl-tablet@1x.webp 1x, ./img/photo-bowl-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="./img/photo-bowl-mobile@1x.webp 1x, ./img/photo-bowl-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x, img/photo-bowl-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1150px)" srcset="./img/photo-bowl-desktop@1x.jpg 1x, ./img/photo-bowl-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./img/photo-bowl-tablet@1x.jpg 1x, ./img/photo-bowl-tablet@2x.jpg 2x">
-                <img src="./img/photo-bowl-mobile@1x.jpg" srcset="./img/photo-bowl-mobile@2x.jpg 2x" alt="Изображение товара" width="260" height="195">
+                <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Изображение товара" width="260" height="195">
               </picture>
             </a>
             <div class="product__wrapper">
@@ -146,7 +148,7 @@
                 <button class="product__add-to-basket-btn" type="button">
                   <span class="visually-hidden">Добавить в корзину</span>
                   <svg class="product__basket-icon" width="20" height="19">
-                    <use xlink:href="./img/sprite.svg#icon-cart"></use>
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
                 </button>
               </div>
@@ -156,13 +158,13 @@
           <article class="catalog__product product">
             <a class="product__image" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 1150px)" srcset="./img/photo-toys-desktop@1x.webp 1x, ./img/photo-toys-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-toys-tablet@1x.webp 1x, ./img/photo-toys-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="./img/photo-toys-mobile@1x.webp 1x, ./img/photo-toys-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
 
-                <source media="(min-width: 1150px)" srcset="./img/photo-toys-desktop@1x.jpg 1x, ./img/photo-toys-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./img/photo-toys-tablet@1x.jpg 1x, ./img/photo-toys-tablet@2x.jpg 2x">
-                <img src="./img/photo-toys-mobile@1x.jpg" srcset="./img/photo-toys-mobile@2x.jpg 2x" alt="Изображение товара" width="260" height="195">
+                <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Изображение товара" width="260" height="195">
               </picture>
             </a>
             <div class="product__wrapper">
@@ -178,7 +180,7 @@
                 <button class="product__add-to-basket-btn" type="button">
                   <span class="visually-hidden">Добавить в корзину</span>
                   <svg class="product__basket-icon" width="20" height="19">
-                    <use xlink:href="./img/sprite.svg#icon-cart"></use>
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
                 </button>
               </div>
@@ -192,19 +194,19 @@
           <h2 class="production__intro">
             Процесс производства
             <svg class="production__camera-icon" width="32" height="32" aria-hidden="true" role="presentation">
-              <use xlink:href="./img/sprite.svg#icon-video"></use>
+              <use xlink:href="img/sprite.svg#icon-video"></use>
             </svg>
           </h2>
 
           <div class="production__subwrapper">
             <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="./img/video-desktop@1x.webp 1x, ./img/video-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="./img/video-tablet@1x.webp 1x, ./img/video-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="./img/video-mobile@1x.webp 1x, ./img/video-mobile@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1150px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x">
-              <img class="production__video" src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x" alt="Видео производства" width="260" height="150">
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="production__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео производства" width="260" height="150">
             </picture>
 
             <button class="production__play-video" type="button">
@@ -227,10 +229,10 @@
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <a class="main-footer__logo" href="./index.html">
+        <a class="main-footer__logo" href="index.html">
           <svg class="main-footer__logo-img" width="102" height="34" aria-labelledby="footer-logo-heading">
             <title id="footer-logo-heading">Логотип сайта</title>
-            <use xlink:href="./img/sprite.svg#logo-footer"></use>
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
           </svg>
         </a>
 
@@ -240,7 +242,7 @@
               <a href="#">
                 <svg class="social__icon social__icon--inst" width="22" height="21" aria-labelledby="instagramm-heading">
                   <title id="instagramm-heading">Instagramm</title>
-                  <use xlink:href="./img/sprite.svg#icon-insta"></use>
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
@@ -248,7 +250,7 @@
               <a href="#">
                 <svg class="social__icon social__icon--fb" width="15" height="28" aria-labelledby="facebook-heading">
                   <title id="facebook-heading">Facebook</title>
-                  <use xlink:href="./img/sprite.svg#icon-fb"></use>
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
@@ -256,7 +258,7 @@
               <a href="#">
                 <svg class="social__icon social__icon--tw" width="23" height="20" aria-labelledby="twitter-heading">
                   <title id="twitter-heading">Twitter</title>
-                  <use xlink:href="./img/sprite.svg#icon-twitter"></use>
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -268,7 +270,7 @@
           <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="developer__icon" width="27" height="34" aria-labelledby="developer-heading" role="img">
               <title id="developer-heading">Логотип академии</title>
-              <use xlink:href="./img/sprite.svg#htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
@@ -312,7 +314,7 @@
 
     <script src="js/svgxuse.min.js" defer></script>
     <script src="js/picturefill.min.js"></script>
-    <script src="./js/mobile-menu.min.js"></script>
-    <script src="./js/catalog-modal.min.js"></script>
+    <script src="js/mobile-menu.min.js"></script>
+    <script src="js/catalog-modal.min.js"></script>
   </body>
 </html>
